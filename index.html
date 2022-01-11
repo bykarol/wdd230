@@ -1,15 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html> 
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet">
+  <title>Assignment Portal Page</title>
+  <meta name="Course Assignment Portal" content="W01 Assignment Portal">
 </head>
 <body>
-  <h1>Testing</h1>
-  <footer>By Karol | Today's Date: <span id="currentdate"></span></footer>
+ <div id="headerContainer"><header>
+    <img src="images/bykarolphoto.png" alt="Karol Bracho Picture" id="mainImg"/>
+    <h1 class="page-title">Karol E. Bracho Yánez</h1>
+</header></div>
+ <main>
+    <h2 class="page-subtitle">WDD230: Assignment Portal</h2>
+    <hr>
+    <ul>
+        <li>Lesson 02: <a href="#">Title</a></li>
+        <li>Lesson 03: <a href="#">Title</a></li>
+        <li>Lesson 04: <a href="#">Title</a></li>
+        <li>Lesson 05: <a href="#">Title</a></li>
+        <li>Lesson 06: <a href="#">Title</a></li>
+        <li>Lesson 07: <a href="#">Title</a></li>
+        <li>Lesson 08: <a href="#">Title</a></li>
+        <li>Lesson 09: <a href="#">Title</a></li>
+        <li>Lesson 10: <a href="#">Title</a></li>
+        <li>Lesson 11: <a href="#">Title</a></li>
+    </ul>
+    <hr>
+    <p id="note">Some lessons may need more than one activity/assignment link</p>
+ </main>
+ <footer onload="date()">
+    <p> &copy; <span id="current-year">Year</span> | Karol Bracho | Spain</p>
+    <p>Last Update: <span id="date">DATE</span></p> 
+</footer>
 <script src="js/currentdate.js"></script>
-  
 </body>
-</html>
+</html> 
