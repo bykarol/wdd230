@@ -5,7 +5,7 @@ function date() {
   /*Fecha de última visita*/
   const now = new Date(document.lastModified);
   const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
-  document.getElementById("date").innerHTML = fulldate;
+  document.getElementById("date").innerHTML = fulldate; //TODO utilizar el query selector
 }
 /*Llamada a la función date()*/
 date();

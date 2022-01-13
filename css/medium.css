@@ -1,0 +1,29 @@
+@media (min-width: 32.5em) { 
+    #mainImg {
+        float: left;
+        clear: right;
+        max-width: 100%;
+        margin: 1% 5% 5% 5%;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        font-size: 1.3em;
+        padding: 0%;
+    }
+
+    .page-title {
+        width: auto;
+        text-align: left;
+        padding-top: 5%;
+        padding-left: 5%;
+        margin-left: 1%;
+    }
+
+    #note {
+        font-size: 14px;        
+    }
+
+   
+  }

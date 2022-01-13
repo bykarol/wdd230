@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: block;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     line-height: 1.5;
 }
 header {
@@ -13,25 +13,32 @@ header {
     background-color: #12bbee;
     width: 100%;
     margin: 0 auto;
-    font-size: 24px;
+    padding: 2% 2% 0% 2%;
+    font-size: 1.4em;
     border-radius: 8px;
     color: white;
+    line-height: 2.2em;
 }
 
 #mainImg {
-    float: left;
-    width: 15%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
     box-shadow: 0px 0px 10px 5px grey;
     border-radius: 3%;
-    margin: 2% 5% 2% 5%;
-    clear: right;
 }
 
 .page-title {
     width: 100%;
-    padding-top: 5%;
-    padding-bottom: 10%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
 }
+
+.page-subtitle {
+    margin: 0%;
+}
+
 
 main {
     clear: left;
@@ -42,18 +49,22 @@ main {
 }
 
 #note {
-    font-size: 14px;
+    margin: 0%;
+    font-size: 1em;
     font-style: italic;
 }
 
 footer {
     background-color: #12bbee;
     text-align: center;
-    padding: 5px;
+    padding: 1%;
     border-radius: 8px;
     font-family: 'Oleo Script', cursive;
-    font-size: 20px;
-    
+    font-size: 1em;  
+}
+
+footer p {
+    margin: 0.2em;
 }
 
 #currentday {
