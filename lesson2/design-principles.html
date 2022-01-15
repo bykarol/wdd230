@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Design Pinciples</title>
   <meta name="Design Principles Portal" content="W02 Design Principles Document">
 </head>
@@ -13,37 +14,45 @@
     <h2>Karol Bracho</h2>
 </header>
   <main>
-    <article id="article1">
-      <h2 class="article-header">Proximity</h2>
+    <section id="section1">
+      <h2 class="section-header">Proximity</h2>
       <h3>Giphy</h3>
       <a href="https://giphy.com/" target="_blank">https://giphy.com/</a>
-      <img src="images/proximity.jpeg" alt="Proximity example"/>
-      <p>
-        texto aquí*********************
+      <p class="p-section">
+        <img src="images/proximity.png" alt="Proximity example" id="img-proximity"/>
+        Related elements are grouped together so they can be viewed as a 
+        whole. I can easily differentiate the groups due to the proximity 
+        between its components since there are no independent elements that 
+        make the page lose cohesion.
       </p>
-    </article>
-    <article id="article2">
-      <h2 class="article-header">Repetition</h2>
+    </section>
+    <section id="section2">
+      <h2 class="section-header">Repetition</h2>
       <h3>Malvestida</h3>
       <a href="https://malvestida.com/" target="_blank">https://malvestida.com/</a>
-      <img src="images/repetition.jpeg" alt="Repetition example"/>
-      <p>
-        texto aquí*********************
+      <p class="p-section">
+        <img src="images/repetition.png" alt="Repetition example" id="img-repetition"/>
+        I like the way in which the same design or shape is repeated throughout the 
+        page, with some variation but without losing unity or the concept of continuity. 
+        In this case, shapes and colors are repeated, giving a beauty perception of the 
+        page.
       </p>
-    </article>
-    <article id="article3">
-      <h2>Aligment and White Spaces</h2>
+    </section>
+    <section id="section3">
+      <h2 class="section-header">Alignment</h2>
       <h3>Impedimenta</h3>
       <a href="https://impedimenta.es/" target="_blank">https://impedimenta.es/</a>
-      <img src="images/alignment-whitespaces.jpeg" alt="Alignment example"/>
-      <p>
-        texto aquí*********************
+      <p class="p-section">
+        <img src="images/alignment-whitespaces.png" alt="Alignment example" id="img-alignment"/>
+        You can see a neat web page, quite simple but with good visual connection, 
+        very easy to see. I also like the fact that the page is not very busy, 
+        having enough white space to rest the eye.
       </p>
-    </article>     
+    </section> 
   </main>
  <footer onload="date()">
-    <p> &copy; <span id="current-year">Year</span> | Karol Bracho | Spain</p>
-    <p>Last Update: <span id="date">DATE</span></p> 
+    &copy; <span id="current-year">Year</span> | Karol Bracho | Spain<br>
+    Last Update: <span id="date">DATE</span>
 </footer>
 <script src="js/currentdate.js"></script>
 </body>
