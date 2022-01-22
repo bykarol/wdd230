@@ -37,6 +37,8 @@ header {
 
 .page-subtitle {
     margin: 0%;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 1.6rem;
 }
 
 

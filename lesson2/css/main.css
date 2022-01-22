@@ -11,6 +11,11 @@ section {
   border-radius: 5px;
 }
 
+.page-title a {
+  text-decoration: none;
+  color: white;
+}
+
 header, .section-header {
   font-family: 'Oleo Script', cursive;
   background-color: darkblue;
