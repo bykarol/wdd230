@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Quicksand:wght@300&display=swap');
 
-#logo {
+.logo {
   width: 100px;
   margin-right: 2%;
   margin-left: 10%;
@@ -13,6 +13,7 @@
 .title-page {
   font-family: 'Girassol';
   font-size: 1.6rem;
+  text-shadow: 0 2px 15px gray;
 }
 
 .subtitles {
@@ -28,15 +29,17 @@ header {
 nav {
   background-color: darkred;
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 2px 15px gray;
 }
 
 nav ul {
   padding-left: 0%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 nav ul li {
@@ -53,6 +56,8 @@ nav a {
 main {
   width: 80%;
   margin: 0 auto;
+  box-shadow: 0 2px 15px gray;
+  padding: 5px 10px 0px 10px;
 }
 
 .paragraph {
@@ -70,6 +75,7 @@ footer {
   padding: 1%;
   color: white;
   font-size: 1.2rem;
+  box-shadow: 0 2px 15px gray;
 }
 
 .active {
@@ -87,10 +93,30 @@ nav ul li:hover {
   opacity: 90%;
 }
 
-/*Medium view*/
-@media (min-width: 32.5em) {
-  
-}
+/*Large view*/
+@media (min-width: 50em) {
+  /* Horizontal menu*/
+  nav ul {
+    display: flex;
+    font-size: 1.6rem;
+  }
 
-@media (min-width: 60em) {
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
+  .title-page {
+    font-size: 2rem;
+  }
+
+  .paragraph, #domain {
+    font-size: 1.3rem;
+    font-weight:600;
+    line-height: 1.7rem;
+  }
+
 }
