@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Quicksand:wght@300&display=swap');
+
+#logo {
+  width: 100px;
+  margin-right: 2%;
+  margin-left: 10%;
+}
+
+.paragraph img {
+  max-width: 100%;
+}
+
+.title-page {
+  font-family: 'Girassol';
+  font-size: 1.6rem;
+}
+
+.subtitles {
+  font-family: 'Bebas Neue', cursive;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: darkred;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav ul {
+  padding-left: 0%;
+  margin: 0 auto;
+}
+
+nav ul li {
+  padding: 1%;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.2rem;
+}
+
+
+footer {
+  background-color: darkred;
+  font-family: 'Bebas Neue', cursive;;
+  text-align: center;
+  padding: 1%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.active {
+  background-color: darkgray;
+  opacity: 90%;
+}
+
+.active a {
+  color: black;
+}
+
+nav ul li:hover {
+  background-color: darkgray;
+  font-size: 1.5rem;
+  opacity: 90%;
+}
+
+/*Medium view*/
+@media (min-width: 32.5em) {
+  
+}
+
+@media (min-width: 60em) {
+}
