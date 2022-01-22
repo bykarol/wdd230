@@ -10,6 +10,10 @@
   max-width: 100%;
 }
 
+#scenarios {
+  padding-bottom: 1%;
+}
+
 .title-page {
   font-family: 'Girassol';
   font-size: 1.6rem;
@@ -17,6 +21,10 @@
 }
 
 .subtitles {
+  color: darkred;
+}
+
+.subtitles, h3 {
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -60,7 +68,7 @@ main {
   padding: 5px 10px 0px 10px;
 }
 
-.paragraph {
+.paragraph, #scenarios {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   text-align: justify;
@@ -113,7 +121,7 @@ nav ul li:hover {
     font-size: 2rem;
   }
 
-  .paragraph, #domain {
+  .paragraph, #domain, #scenarios {
     font-size: 1.3rem;
     font-weight:600;
     line-height: 1.7rem;
