@@ -6,6 +6,17 @@
   margin-left: 10%;
 }
 
+.icon-up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: darkgray;
+  padding: 5px 5px;
+  cursor: pointer;
+  opacity: 90%;
+}
+
 .paragraph img {
   max-width: 100%;
 }
