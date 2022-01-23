@@ -1,3 +1,4 @@
+function arrowup() {
 $(document).ready(function(){
 
 	$('.icon-up').click(function(){
@@ -15,3 +16,5 @@ $(document).ready(function(){
 	});
 
 });
+}
+arrowup();
