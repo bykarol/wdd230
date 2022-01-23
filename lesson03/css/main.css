@@ -84,6 +84,11 @@ main {
   color: whitesmoke;
 }
 
+#to-portal-page:hover {
+  box-shadow: 0 2px 15px gray;
+  padding: 5px 10px 0px 10px;
+}
+
 .paragraph, #scenarios {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
