@@ -79,6 +79,11 @@ main {
   padding: 5px 10px 0px 10px;
 }
 
+#to-portal-page {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .paragraph, #scenarios {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
