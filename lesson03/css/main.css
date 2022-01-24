@@ -17,14 +17,6 @@
   opacity: 90%;
 }
 
-.paragraph img {
-  max-width: 100%;
-}
-
-#scenarios {
-  padding-bottom: 1%;
-}
-
 .title-page {
   font-family: 'Girassol';
   font-size: 1.6rem;
@@ -72,41 +64,6 @@ nav a {
   color: whitesmoke;
 }
 
-main {
-  width: 80%;
-  margin: 0 auto;
-  box-shadow: 0 2px 15px gray;
-  padding: 5px 10px 0px 10px;
-}
-
-#to-portal-page {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-#to-portal-page:hover {
-  box-shadow: 0 2px 15px gray;
-  padding: 5px 10px 0px 10px;
-}
-
-.paragraph, #scenarios {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  text-align: justify;
-  line-height: 1.2rem;
-}
-
-
-footer {
-  background-color: darkred;
-  font-family: 'Bebas Neue', cursive;;
-  text-align: center;
-  padding: 1%;
-  color: white;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 15px gray;
-}
-
 .active {
   background-color: darkgray;
   opacity: 90%;
@@ -120,6 +77,49 @@ nav ul li:hover {
   background-color: darkgray;
   font-size: 1.5rem;
   opacity: 90%;
+}
+
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 2px 15px gray;
+  padding: 5px 10px 0px 10px;
+}
+
+.paragraph, #scenarios {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.2rem;
+}
+
+.paragraph img {
+  max-width: 100%;
+}
+
+#scenarios {
+  padding-bottom: 1%;
+}
+
+footer {
+  background-color: darkred;
+  font-family: 'Bebas Neue', cursive;;
+  text-align: center;
+  padding: 1%;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 15px gray;
+}
+
+#to-portal-page {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#to-portal-page:hover {
+  box-shadow: 0 2px 15px gray;
+  padding: 5px 10px 0px 10px;
 }
 
 /*Large view*/
@@ -155,7 +155,7 @@ nav ul li:hover {
     margin-bottom: 30px;
     clear: left;
   }
-
+  
   h2, h3, #scenarios {
     clear: both;
   }
