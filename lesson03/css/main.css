@@ -148,4 +148,16 @@ nav ul li:hover {
     line-height: 1.7rem;
   }
 
+  .persons {
+    float: left;
+    max-width: 100%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    clear: left;
+  }
+
+  h2, h3, #scenarios {
+    clear: both;
+  }
+
 }
