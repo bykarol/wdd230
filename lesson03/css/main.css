@@ -37,31 +37,52 @@ header {
   align-items: center;
 }
 
+/*NAVIGATION*/
+nav button {
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
 nav {
   background-color: darkred;
   font-family: 'Bebas Neue', cursive;
   font-size: 1.4rem;
   width: 100%;
   margin: 0 auto;
-  text-align: center;
   box-shadow: 0 2px 15px gray;
 }
 
 nav ul {
-  padding-left: 0%;
-  margin: 0 auto;
+  display: none;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
 }
+
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
 
 nav ul li {
   padding: 1%;
   list-style: none;
+  border-top: 1px solid rgb(0, 0, 0, 0.5);
 }
 
-nav a {
+nav ul li a {
   display: block;
   text-decoration: none;
   color: whitesmoke;
+  padding: .8rem 2vw;
 }
 
 .active {
@@ -78,7 +99,6 @@ nav ul li:hover {
   font-size: 1.5rem;
   opacity: 90%;
 }
-
 
 main {
   width: 80%;
@@ -125,13 +145,21 @@ footer {
 /*Large view*/
 @media (min-width: 50em) {
   /* Horizontal menu*/
-  nav ul {
+  nav button {
+    display: none;
+  }
+
+  nav ul#primaryNav {
     display: flex;
+    text-align: center;
     font-size: 1.6rem;
+    border-left: 1px solid rgb(0, 0, 0, 0.5);
   }
 
   nav ul li {
     flex: 1 1 auto;
+    border: none;
+    border-right: 1px solid rgb(0, 0, 0, 0.5);
   }
 
   .logo {
