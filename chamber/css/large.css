@@ -1,0 +1,35 @@
+/*Large view*/
+@media (min-width: 50em) {
+  /* Horizontal menu*/
+  nav button {
+    display: none;
+  }
+
+  nav ul#primaryNav {
+    display: flex;
+    text-align: center;
+    font-size: 1.6rem;
+    border-left: 1px solid rgb(0, 0, 0, 0.5);
+  }
+
+  nav ul li {
+    flex: 1 1 auto;
+    border: none;
+    border-right: 1px solid rgb(0, 0, 0, 0.5);
+  }
+
+  header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: 0.9rem;
+	}
+
+}

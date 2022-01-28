@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/arrow-up.js"></script>
+    <title>Chamber of Commerce A Coruña</title>
+    <meta name="Chamber of Commerce A Coruña" content="Represent, promote and defend general interests of commerce, industry, services and shipping in A Coruña">
+  </head>
+  <body onload="arrowup()">
+    <img src="images/icon-arrow-up.png" class="icon-up"/>
+    <header>
+    <div class="logo">
+      <img src="images/logocccoruna.png" alt="A Coruña Chamber logo">
+    </div>
+    <div class="headings">
+        <h1>Chamber of Commerce</h1>
+        <h2>A Coruña - Spain</h2>
+    </div>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="images/FBlogo.png" alt="Facebook logo"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="images/INlogo.png" alt="Linkedin Logo"></a>
+    </div>
+    <span id="headerDate">DATE</span>
+    <div id="nav"><nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+      <ul id="primaryNav">
+        <li class="active"><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav></div>
+  </header>
+  <main>
+    <div id="hero">
+        <p>Hero with site name and call to action</p>
+    </div>
+    <div id="event">
+        <p>Event</p>
+    </div>
+    <div id="weather">
+        <p>Weather</p>
+    </div>
+    <div id="news">
+        <p>News Release</p>
+    </div>
+    <div id="spotlights">
+        <p>Spotlight 1</p>
+        <p>Spotlight 2</p>
+        <p>Spotlight 3</p>
+    </div>
+    <div id="join">
+        <p>Join</p>
+    </div>
+  </main>
+  <footer onload="date()">
+    <p> &copy; <span id="current-year">Year</span> | Karol Bracho | Spain</p>
+    <p> <a href="https://bykarol.github.io/wdd230/" id="to-portal-page">&#x1f3e0; Portal Page</a> | Last Update: <span id="date">DATE</span></p> 
+</footer>
+<script src="js/currentdate.js"></script>
+<script src="js/toggle-menu.js"></script>
+  </body>
+</html>
