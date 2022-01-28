@@ -1,21 +1,32 @@
 /*Large view*/
-@media (min-width: 50em) {
+@media (min-width: 63em) {
+header {
+  grid-template-columns: 1fr 2fr 3fr 1fr;
+}
+
   /* Horizontal menu*/
   nav button {
     display: none;
   }
 
-  nav ul#primaryNav {
-    display: flex;
-    text-align: center;
-    font-size: 1.6rem;
-    border-left: 1px solid rgb(0, 0, 0, 0.5);
+  nav {
+    grid-area: 1/3/2/4;
+    align-self: center;    
   }
 
-  nav ul li {
+  nav ul#primaryNav {
+    display: flex;
+    font-size: 1rem;
+  }
+
+  nav ul#primaryNav li {
     flex: 1 1 auto;
     border: none;
-    border-right: 1px solid rgb(0, 0, 0, 0.5);
+  }
+
+  .active a, nav ul li a:hover {
+    color: black;
+    font-size: 1.2rem;
   }
 
   header img {
@@ -27,9 +38,61 @@
 		margin: 0;
 	}
 
-	.m {
-		letter-spacing: 1.5pt;
-		font-size: 0.9rem;
-	}
+  .social {
+    grid-column: 4/5;
+    justify-self: center;
+  }
+
+  main {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #event {
+    grid-area: 1/1/2/2;
+  }
+
+  #hero {
+    grid-area: 1/2/3/4;
+  }
+
+  #spotlights {
+    display: block;
+    grid-area: 1/4/4/5;
+    padding: 0%;
+  }
+
+  #spotlights p:nth-child(3) {
+    display: block;
+  }
+
+  #weather {
+    grid-area: 2/1/3/2;
+  }
+
+  #news {
+    grid-area: 3/2/3/4;
+  }
+
+  #join {
+    grid-area: 3/1/4/2;
+  }
+
+  /*Footer*/
+  #footer1 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #footer2 ul {
+    display: flex;
+  }
+
+  #footer2 ul li {
+    flex: 1 1 auto;
+  }
+
+
 
 }

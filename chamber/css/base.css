@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Quicksand:wght@300&display=swap');
-* {
-  border: 1pt solid;
+body {
+  max-width: 100%;
 }
+
 .icon-up {
   display: none;
   position: fixed;
@@ -16,6 +17,7 @@
 header {
 	background-color: #fff;
 	display: grid;
+  grid-gap: 1%;
   grid-template-columns: 1fr 3fr 1fr 1fr;
   box-shadow: 0 2px 15px gray;
 }
@@ -55,34 +57,42 @@ header {
 .social {
   grid-column: 3/4;
   align-self: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .social img {
-	width: 32px;
+	max-width: 32px;
 }
 
 #headerDate {
-  grid-area: 2 / 1  / 2 / 5 ;
+  grid-column: 1/5;
   background-color: darkred;
   font-family: 'Bebas Neue', cursive;
-  padding: 2% 1%;
+  font-size: 1em;
+  letter-spacing: 0.2rem;
+  padding: 2%;
   color: white;
   text-align: center;
+  margin: 2%;
 }
 
 /*NAVIGATION*/
 nav button {
+  position: absolute;
+  right: 1%;
+  top: 2%;
   margin: .2rem 2vw;
-  background: transparent;
+  background: darkred;
   border: none;
   font-size: 2rem;
   color: white;
 }
 
 nav {
-  background-color: darkred;
+  grid-column: 1/5;
   font-family: 'Bebas Neue', cursive;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   width: 100%;
   margin: 0 auto;
   box-shadow: 0 2px 15px gray;
@@ -108,6 +118,7 @@ nav ul.open {
 nav ul li {
   padding: 1%;
   list-style: none;
+  background-color: darkred;
   border-top: 1px solid rgb(0, 0, 0, 0.5);
 }
 
@@ -123,14 +134,14 @@ nav ul li a {
   opacity: 90%;
 }
 
-.active a {
+.active a, nav ul li a:hover {
   color: black;
+  font-size: 1.4rem;
 }
 
 nav ul li:hover {
   background-color: darkgray;
-  font-size: 1.5rem;
-  opacity: 90%;
+  opacity: 80%;
 }
 
 main {
@@ -164,12 +175,47 @@ main div {
 
 footer {
   background-color: darkred;
-  font-family: 'Bebas Neue', cursive;;
+  font-family: 'Quicksand';
   text-align: center;
-  padding: 1%;
   color: white;
-  font-size: 1.2rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
   box-shadow: 0 2px 15px gray;
+}
+
+footer div:nth-child(1) {font-size: 1.2rem;}
+footer div:nth-child(2) {font-size: 0.5rem;}
+
+#logofooter img {
+  width: 80px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 1%;
+  padding-bottom: 0%;
+}
+
+#footer1 p {
+  margin: 3%;
+  padding: 1%;
+}
+
+#footer1 a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer1 a::before {
+  content: "📍";
+}
+
+#footer2 ul li {
+  list-style: none;
+}
+
+
+#karolName, #chamberNameFooter { 
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.15rem;
 }
 
 #to-portal-page {
@@ -180,4 +226,8 @@ footer {
 #to-portal-page:hover {
   box-shadow: 0 2px 15px gray;
   padding: 5px 10px 0px 10px;
+}
+
+hr {
+  opacity: 30%;
 }
