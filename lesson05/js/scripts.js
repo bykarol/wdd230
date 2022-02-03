@@ -15,11 +15,13 @@ buildbutton.addEventListener('click', () => {
     itemName.textContent = chapter;
     list.appendChild(delbutton);
     delbutton.textContent = '❌';
+    //ariaLabel is for accesibility
+    delbutton.ariaLabel = 'Delete';
     ul.appendChild(list);    
 
     delbutton.onclick = function(e) {
       ul.removeChild(list);
     }
-    
+
     favchap.focus();
 });
