@@ -3,6 +3,19 @@ body {
   max-width: 100%;
 }
 
+.banner {
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.3rem;
+  padding: 1% 1%;
+}
+
+#banner {
+  display: none;
+}
+
 .icon-up {
   display: none;
   position: fixed;
@@ -80,8 +93,8 @@ header {
 /*NAVIGATION*/
 nav button {
   position: absolute;
-  right: 1%;
-  top: 2%;
+  right: 2%;
+  top: 40px;
   margin: .2rem 2vw;
   background: darkred;
   border: none;
@@ -135,13 +148,12 @@ nav ul li a {
 }
 
 .active a, nav ul li a:hover {
-  color: black;
+  color: darkred;
   font-size: 1.4rem;
 }
 
 nav ul li:hover {
   background-color: darkgray;
-  opacity: 80%;
 }
 
 main {
