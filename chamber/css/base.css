@@ -253,7 +253,13 @@ hr {
   padding: 0 0;
   background-color: transparent;
 }
-#hero img {
+
+#hero picture {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+#hero .heroImages {
   width: 100%;
 }
 
@@ -267,6 +273,7 @@ hr {
 
 #joinBtn {
   position: absolute;
+  font-size: 1em;
   background-color: darkred;
   color: white;
   font-family: 'Quicksand';
@@ -274,11 +281,11 @@ hr {
   cursor: pointer;
   bottom: 2%;
   right: 2%;
+  padding: 1%;
   box-shadow: 0 2px 15px gray;
 }
 
 #joinBtn:hover {
   font-size: 1.1em;
-  background-color: darkgray;
-  color: black;
+  background-color: black;
 }
