@@ -100,6 +100,7 @@ nav button {
   border: none;
   font-size: 2rem;
   color: white;
+  cursor: pointer;
 }
 
 nav {
@@ -150,6 +151,7 @@ nav ul li a {
 .active a, nav ul li a:hover {
   color: darkred;
   font-size: 1.4rem;
+  
 }
 
 nav ul li:hover {
@@ -242,4 +244,41 @@ footer div:nth-child(2) {font-size: 0.5rem;}
 
 hr {
   opacity: 30%;
+}
+
+/* --- images ---- */
+
+#hero {
+  position: relative;
+  padding: 0 0;
+  background-color: transparent;
+}
+#hero img {
+  width: 100%;
+}
+
+#hero h2 {
+  position: absolute;
+  text-shadow: 0 2px 15px darkred;
+  margin-left: 2%;
+  margin-top: 1%;
+  font-size: 2em;
+}
+
+#joinBtn {
+  position: absolute;
+  background-color: darkred;
+  color: white;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  cursor: pointer;
+  bottom: 2%;
+  right: 2%;
+  box-shadow: 0 2px 15px gray;
+}
+
+#joinBtn:hover {
+  font-size: 1.1em;
+  background-color: darkgray;
+  color: black;
 }
