@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/jquery-latest.js"></script>
-    <script defer src="js/scripts.js" defer></script>  
+    <script src="js/scripts.js" defer></script>  
   </head>
   <body>
     <div class="banner" id="banner">
       <q>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</q>
     </div>
-    <img src="images/icon-arrow-up.png" class="icon-up"/>
+    <img src="images/icon-arrow-up.png" class="icon-up" alt="Go up"/>
     <header>
     <div class="logo">
       <img src="images/logocccoruna.webp" alt="A Coruña Chamber logo">
@@ -49,28 +49,61 @@
     <div id="hero">
         <h2>Welcome to Coruña</h2>
         <picture class="heroImg">
-          <source srcset="images/wdd230-medium.png" media="(min-width: 37em) and (max-width: 62em)" class="heroImages">
-          <source srcset="images/wdd230-large.png" media="(min-width: 63em)" class="heroImages">
+          <source srcset="images/wdd230-medium.png" media="(min-width: 40em) and (max-width: 62em)" class="heroImages">
+          <source srcset="images/wdd230-large.png" media="(min-width: 55em)" class="heroImages">
           <img src="images/wdd230-small.png" alt="A Coruña hero image" class="heroImages">
       </picture>
         <button id="joinBtn">Join to the chamber</button>
     </div>
     <div id="event">
-        <p>Event</p>
+      <h2>Ribbon Cutting</h2>
+      <h3>💎 The Diamond Shack</h3>
+      <p>Join us for the gran opening of The Diamond Shack, Thursday at 1:00pm <br><a href="#">more info...</a></p>
     </div>
     <div id="weather">
-        <p>Weather</p>
+        <h2>Weather</h2>
+        <div id="weatherInfo">
+          <img src="images/weather.webp" alt="Cloudy image" id="cloudyImg">
+          <p id="weatherC">33°C</p>
+          <p>Party Cloudy</p>
+        </div>
+        <hr>
+        <p>Wind Speed: <span>2.5 km/h</span></p>
+        <p>Wind Chill <span>N/A</span></p>
     </div>
     <div id="news">
-        <p>News Release</p>
+      <h2>News Release</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem. Sit amet facilisis magna etiam tempor. Morbi quis commodo odio aenean sed. Donec enim diam vulputate ut pharetra. Elementum nibh tellus molestie nunc non blandit. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Orci nulla pellentesque dignissim enim sit amet venenatis. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. A condimentum vitae sapien pellentesque. Lorem mollis aliquam ut porttitor leo a diam.</p>
     </div>
     <div id="spotlights">
-        <p>Spotlight 1</p>
-        <p>Spotlight 2</p>
-        <p>Spotlight 3</p>
+        <section>
+          <h2>Thankful Transport</h2>
+          <img src="images/truck.webp" alt="Red Truck"><br>
+          <q>We get it there for you</q>
+          <hr>
+          <p>hello@thankfulltransport.com</p>
+          <p>+999-9999-9999 Website</p>
+        </section>
+        <section>
+          <h2>Code Primera</h2>
+          <img src="images/code.webp" alt="A boy with a pencil"><br>
+          <em>An after school coding instructional program.</em>
+          <hr>
+          <p>contact@codeprimera.com</p>
+          <p>+999-9999-9999 | Website</p>
+        </section>
+        <section>
+          <h2>Build A Treefort</h2>
+          <img src="images/treefort.webp" alt="Tree Fort"><br>
+          <em>Over 1000 Plans!</em>
+          <hr>
+          <p>builda@treefort.com</p>
+          <p>+999-9999-9999 Website</p>
+        </section>
     </div>
     <div id="join">
-        <p>Join</p>
+        <h2>Join Us!<h2>
+        <p>Discover how to join the Chamber of Commerce and how it will benefit your organization!</p>
     </div>
   </main>
   <footer onload="date()">
