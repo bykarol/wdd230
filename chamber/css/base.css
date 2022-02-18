@@ -314,3 +314,29 @@ hr {
   font-size: 1.1em;
   background-color: black;
 } 
+
+/* ----------DISCOVERY HTML-----------*/
+#discoveryMain figure {
+  display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+#discoveryMain figure img[data-src] {
+  filter: blur(.2em);
+}
+
+#discoveryMain figure img {
+  filter:blur(0em);
+  transition: filter 0.5s;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#discoveryMain figure figcaption {
+  font-family: 'Quicksand';
+  text-align: justify;
+}
+

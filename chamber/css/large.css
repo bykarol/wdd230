@@ -3,6 +3,10 @@
   main {
     width: 95%;
     overflow: hidden;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 1rem;
   }
 
   header {
@@ -48,13 +52,6 @@
     justify-self: center;
   }
 
-  main {
-    display: grid;
-    grid-gap: 1%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 1rem;
-  }
-
   #hero {
     grid-area: 1/2/3/4;
   }
@@ -97,6 +94,10 @@
   #footer2 ul li {
     flex: 1 1 auto;
   }
+
+  /*Discovery html*/
+  
+
 
 
 
