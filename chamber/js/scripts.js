@@ -36,6 +36,7 @@ if ("IntersectionObserver" in window) {
     });
     
 };
+
 /*--------------BOTÓN ARRIBA-----------------*/
 function arrowup() {
 $(document).ready(function(){

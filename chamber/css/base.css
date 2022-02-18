@@ -338,5 +338,7 @@ hr {
 #discoveryMain figure figcaption {
   font-family: 'Quicksand';
   text-align: justify;
+  font-size: smaller;
+  padding: 5px 10px;
 }
 

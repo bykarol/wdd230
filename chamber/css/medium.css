@@ -88,5 +88,12 @@
     padding-top: 1%;
   }
 
+  /* ----------DISCOVERY HTML-----------*/
+#discoveryMain figure:hover {
+  background-color: darkred;
+  color: white;
+  box-shadow: 0 0px 50px darkgray;
+  font-size: large;
+}
 
 }
