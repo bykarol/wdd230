@@ -29,14 +29,14 @@ header {
     margin-bottom: 1em;
 }
 
-img[data-src] {
-    filter: blur(0.2em);
-  }
+img {
+    filter: blur(0.8);
+}
 
 #mainContainer .images {
     max-width: 100%;
     margin: 0 auto;
-    filter: none
+    filter: blur(0);
 }
 
 footer {
