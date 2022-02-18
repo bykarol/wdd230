@@ -29,6 +29,10 @@ header {
     margin-bottom: 1em;
 }
 
+img {
+    filter: blur(0em);
+}
+
 #mainContainer .images {
     max-width: 100%;
     margin: 0 auto;
