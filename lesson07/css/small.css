@@ -7,14 +7,10 @@ body {
     margin: 0 auto;
     line-height: 1.5;
 }
+
 header {
     font-family: 'Oleo Script', cursive;
-    background-color: #12bbee;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2% 2% 0% 2%;
     font-size: 1.4em;
-    border-radius: 8px;
     line-height: 2.2em;
 }
 
@@ -23,10 +19,18 @@ header {
     margin: 0 auto;
     text-align: center;
     padding: 2%;
+    text-shadow: 0px 4px darkgray;
 }
 
 #mainContainer {
-    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+#mainContainer .images {
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -41,6 +45,12 @@ footer {
 
 footer p {
     margin: 0.2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: darkred;
+    font-size: 1.2em;
 }
 
 #currentday {

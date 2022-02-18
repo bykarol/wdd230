@@ -13,17 +13,18 @@
      <h1 class="page-title">Progressive loading of images</h1>
   </header>
  <main id="mainContainer">
-   <img src="images/placeholder.png" data-src="images/a-marina.png" alt="A Marina Avenue">
-   <img src="images/placeholder.png" data-src="images/ciudad-vieja.png" alt="Old City">
-   <img src="images/placeholder.png" data-src="images/fachada-maritima.png" alt="Fisher's City">
-   <img src="images/placeholder.png" data-src="images/maria-pita.png" alt="María Pita local Heroine">
-   <img src="images/placeholder.png" data-src="images/san-anton.png" alt="San Anton Castle">
-   <img src="images/placeholder.png" data-src="images/torre-hercules.png" alt="Tower of Hercules">    
+   <img class="images" src="images/placeholder.png" data-src="images/a-marina.png" alt="A Marina Avenue">
+   <img class="images" src="images/placeholder.png" data-src="images/ciudad-vieja.png" alt="Old City">
+   <img class="images" src="images/placeholder.png" data-src="images/fachada-maritima.png" alt="Fisher's City">
+   <img class="images" src="images/placeholder.png" data-src="images/maria-pita.png" alt="María Pita local Heroine">
+   <img class="images" src="images/placeholder.png" data-src="images/san-anton.png" alt="San Anton Castle">
+   <img class="images" src="images/placeholder.png" data-src="images/torre-hercules.png" alt="Tower of Hercules">    
  </main>
+ <script src="js/lazyload.js"></script>
  <footer onload="date()">
-    <p> &copy; <span id="current-year">Year</span> | Karol Bracho | Spain</p>
+    <p> &copy; <span id="current-year">Year</span> | Karol Bracho | <a href="https://bykarol.github.io/wdd230/">🏠 Portal Page</a></p>
     <p>Last Update: <span id="date">DATE</span></p> 
 </footer>
-<script src="js/currentdate.js"></script>
+<script src="js/currentdate.js" defer></script>
 </body>
 </html> 
