@@ -29,11 +29,11 @@ header {
     margin-bottom: 1em;
 }
 
-#mainContainer .images[data-src] {
+img[data-src] {
     filter: blur(0.3em);
   }
 
-#mainContainer .images {
+img {
     max-width: 100%;
     margin: 0 auto;
     filter: blur(0);
