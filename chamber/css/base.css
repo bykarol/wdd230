@@ -27,7 +27,7 @@
 header {
 	background-color: #fff;
 	display: grid;
-  grid-gap: 1%;
+  grid-gap: 4%;
   grid-template-columns: 1fr 3fr 1fr 1fr;
   box-shadow: 0 2px 15px gray;
 }
@@ -45,13 +45,12 @@ header {
 
 .headings {
   display: flex;
-	align-items: center;
-  flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .headings h1 {
 	font-family: 'Girassol';
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-bottom: 1%;
   text-shadow: 0 2px 15px gray;
 }
@@ -72,7 +71,7 @@ header {
 }
 
 .social img {
-	max-width: 32px;
+	max-width: 28px;
 }
 
 #headerDate {
@@ -88,16 +87,15 @@ header {
 }
 
 /*NAVIGATION*/
-nav button {
-  position: absolute;
-  right: 2%;
-  top: 40px;
-  margin: .2rem 2vw;
+nav button {  
   background: darkred;
   border: none;
   font-size: 2rem;
   color: white;
   cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 3%;
 }
 
 nav {
