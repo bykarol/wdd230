@@ -316,10 +316,10 @@ hr {
 /* ----------DISCOVERY HTML-----------*/
 #discoveryMain figure {
   display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    margin-bottom: 1em;
-    overflow: hidden;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+  overflow: hidden;
 }
 
 #discoveryMain figure img[data-src] {
