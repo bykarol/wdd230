@@ -91,3 +91,13 @@ footer a {
   margin-top: -10px;
   text-align: center;
 }
+
+/*-----MEDIUM VIEW --------*/
+
+@media (min-width: 40em) { 
+
+  table, footer {
+    width: 50%;
+  }
+ 
+}
