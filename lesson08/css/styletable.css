@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 /*font-family: 'Ubuntu', sans-serif;*/
 
+:root {
+	--back: #9ABAD9;
+  --back2: #71A6D9;
+  --foredark: #1A1A1A;
+	--forelight: #fff;
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+	--zebra:  #E1F7F0;
+  --zebraodd:  #CAE6DC;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -9,10 +21,43 @@ body {
 }
 
 table {
+  border: thin solid var(--border);
+	box-shadow: 5px 5px 20px var(--shadow);
   text-align: center;
   border-collapse: collapse;
 }
 
+tr:first-child th, tfoot {
+	background-color: var(--back);
+}
+
+thead tr:first-child {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+tr:nth-child(4) td:last-child, thead tr:nth-child(2) {
+  background-color: var(--back);
+  color: var(--forelight);
+}
+
 th, td {
-  border: 1pt solid black;
+	padding: 7px 15px;
+	border: 1px solid var(--borderlight);
+}
+
+th {
+	background-color: var(--back2);
+}
+
+tbody tr {
+  background-color: var(--zebraodd);
+}
+
+tbody tr:nth-child(even) {
+	background-color: var(--zebra);
+}
+
+tfoot {
+  font-size: .8em;
 }
