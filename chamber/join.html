@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Karol Bracho">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Join to the A Coruña Chamber</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="js/jquery-latest.js" defer></script>
+  </head>
+  <body>
+    <img src="images/icon-arrow-up.png" class="icon-up" alt="Go up"/>
+    <header>
+    <div class="logo">
+      <img src="images/logocccoruna.webp" alt="A Coruña Chamber logo">
+    </div>
+    <div class="headings">
+        <h1>A Coruña Spain</h1>
+        <h2>Discover the City</h2>
+    </div>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="images/FBlogo.png" alt="Facebook logo"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="images/INlogo.png" alt="Linkedin Logo"></a>
+    </div>
+    <span id="headerDate">DATE</span>
+    <nav>
+      <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+      <ul id="primaryNav">
+        <li><a href="https://bykarol.github.io/wdd230/chamber/">Home</a></li>
+        <li><a href="https://bykarol.github.io/wdd230/chamber/discovery.html">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li class="active"><a href="https://bykarol.github.io/wdd230/chamber/join.html">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="joinMain">
+    <h1>Business Application</h1>
+    <form method="get" action="thankyou.html">
+        <fieldset>
+            <legend>Essential Information</legend>
+            <label class="top">First Name* <input type="text" name="fname" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" required></label>
+            <label class="top">Business Position <input type="text" name="bPosition" maxlength="7"></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
+            <label class="top">Business Name* <input type="text" name="title" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Membership Level</legend>
+            <label class="sbs"><input type="radio" name="membership" value="np"> Non Profit</label>
+            <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze</label>
+            <label class="sbs"><input type="radio" name="membership" value="silver"> Silver</label>
+            <label class="sbs"><input type="radio" name="membership" value="gold"> Gold</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Business Description</legend>
+            <label class="top">Tell us about your business <textarea rows="10"></textarea>
+        </fieldset>
+        <input type="submit" value="Enroll My Business" class="submitBtn">
+    </form>        
+  </main>
+  <footer onload="date()">
+    <div id="footer1">
+      <div id="logofooter"><img src="images/logocccoruna.webp" alt="A Coruña Chamber logo"></div>
+      <p><span id="chamberNameFooter">A Coruña Chamber of Commerce</span><br>
+      Av A Mariña 3<br>A Coruña, Spain 15007</p>
+      <p>info@corunacommerce.org<br>+(54) 5555-5555<br>
+      <a href="#">Location Map</a></p>
+    </div>
+    <hr>
+    <div id="footer2">
+      <ul>
+        <li>&copy; <span id="current-year">Year</span> A Coruña Chamber</li>
+        <li><span id="karolName">Karol Bracho</span></li>
+        <li>WDD 230 Project</li>
+        <li>Last Update: <span id="date">DATE</span></li>
+      </ul>
+    </div>
+    <div>
+      <p><a href="https://bykarol.github.io/wdd230/" id="to-portal-page">&#x1f3e0; Portal Page</a></p>
+      <p></p>
+    </div>
+</footer>
+<script src="js/scripts.js" defer></script>
+</body>
+</html>

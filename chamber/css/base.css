@@ -340,3 +340,83 @@ hr {
   padding: 5px 10px;
 }
 
+/*-----FORM---------*/
+#joinMain {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  padding: 0 1%;
+}
+
+#joinMain h1 {
+  font-family: 'Girassol';
+  font-size: 1.5rem;
+  padding: .75rem;
+  text-shadow: 0 2px 15px gray;
+}
+
+form fieldset {
+  font-family: 'Bebas Neue', cursive;
+  margin: 2rem 0;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: darkred;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top {
+  font-family: 'Quicksand';
+  font-weight: 900;
+  display: block;
+  padding-top: 1rem;
+  color: darkslategray;
+  font-size: .8rem;
+}
+
+form label.top input, form label.top select, form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-weight: 900;
+  font-size: 1rem;
+  border: solid 1px darkgray;
+  border-radius: 4px;
+  padding: .75rem;
+  color: darkblue;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  font-family: 'Quicksand';
+  font-weight: 900;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+
