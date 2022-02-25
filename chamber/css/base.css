@@ -341,14 +341,14 @@ hr {
 }
 
 /*-----FORM---------*/
-#joinMain {
+#joinMain, #thanksMain {
   display: flex;
   flex-direction: column;
   width: 96%;
   padding: 0 1%;
 }
 
-#joinMain h1 {
+#joinMain h1, #thanksMain h1 {
   font-family: 'Girassol';
   font-size: 1.5rem;
   padding: .75rem;
@@ -369,7 +369,7 @@ form legend {
   padding: 0 .5rem;
 }
 
-form label.top {
+form label.top, #thanksMain{
   font-family: 'Quicksand';
   font-weight: 900;
   display: block;
@@ -386,7 +386,7 @@ form label.top input, form label.top select, form label.top textarea {
   border: solid 1px darkgray;
   border-radius: 4px;
   padding: .75rem;
-  color: darkblue;
+  color: darkred;
   width: 100%;
   max-width: 20rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -402,7 +402,7 @@ form label.sbs {
 
 form input.submitBtn {
   border: none;
-  background-color: #9c2c13;
+  background-color: darkred;
   color: white;
   border-radius: 1rem;
   padding: .75rem 1.5rem;

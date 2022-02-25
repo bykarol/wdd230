@@ -46,7 +46,7 @@
             <label class="top">First Name* <input type="text" name="fname" required></label>
             <label class="top">Last Name* <input type="text" name="lname" required></label>
             <label class="top">Business Position <input type="text" name="bPosition" maxlength="7"></label>
-            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
             <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
             <label class="top">Business Name* <input type="text" name="title" required></label>
         </fieldset>
@@ -63,9 +63,10 @@
             <label class="top">Tell us about your business <textarea rows="10"></textarea>
         </fieldset>
         <input type="submit" value="Enroll My Business" class="submitBtn">
+        <input type="hidden" id="dateForm" name="dateForm" value="currentdate">
     </form>        
   </main>
-  <footer onload="date()">
+  <footer>
     <div id="footer1">
       <div id="logofooter"><img src="images/logocccoruna.webp" alt="A Coruña Chamber logo"></div>
       <p><span id="chamberNameFooter">A Coruña Chamber of Commerce</span><br>
@@ -88,5 +89,6 @@
     </div>
 </footer>
 <script src="js/scripts.js" defer></script>
+<script src="js/formDate.js"></script>
 </body>
 </html>
