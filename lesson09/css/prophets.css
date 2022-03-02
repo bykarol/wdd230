@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oleo+Script&display=swap');
+
+
+header h1 {
+    font-family: 'Oleo Script', cursive;
+    background-color: #ffdf00;
+    text-align: center;
+}
+
+h2, footer {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.cards section {
+    background-color: #12bbee;
+	margin: 0 auto;
+	max-width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    display: block;
+}
+
+div.cards {
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    box-shadow: 0 0 30px #333;
+    background-color: white;
+}
+
+/* Desktop Views ****************************/
+@media screen and (min-width: 60em) {
+    .cards section {
+        max-width: 50%;
+    }
+
+    div.cards {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
