@@ -5,7 +5,7 @@
     <meta name="author" content="Karol Bracho">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Join to the A Coruña Chamber</title>
+    <title>Directory A Coruña</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -20,7 +20,7 @@
     </div>
     <div class="headings">
         <h1>A Coruña Spain</h1>
-        <h2>Discover the City</h2>
+        <h2>Chamber Directory</h2>
     </div>
     <div class="social">
       <a href="https://facebook.com" target="_blank"><img src="images/FBlogo.png" alt="Facebook logo"></a>
@@ -32,41 +32,17 @@
       <ul id="primaryNav">
         <li><a href="https://bykarol.github.io/wdd230/chamber/">Home</a></li>
         <li><a href="https://bykarol.github.io/wdd230/chamber/discovery.html">Discover</a></li>
-        <li><a href="https://bykarol.github.io/wdd230/chamber/directory.html">Directory</a></li>
-        <li class="active"><a href="https://bykarol.github.io/wdd230/chamber/join.html">Join</a></li>
+        <li class="active"><a href="https://bykarol.github.io/wdd230/chamber/directory.html">Directory</a></li>
+        <li><a href="https://bykarol.github.io/wdd230/chamber/join.html">Join</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main id="joinMain">
-    <h1>Business Application</h1>
-    <form method="get" action="thankyou.html">
-        <fieldset>
-            <legend>Essential Information</legend>
-            <label class="top">First Name* <input type="text" name="fname" required></label>
-            <label class="top">Last Name* <input type="text" name="lname" required></label>
-            <label class="top">Business Position <input type="text" name="bPosition" maxlength="7"></label>
-            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
-            <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
-            <label class="top">Business Name* <input type="text" name="title" required></label>
-        </fieldset>
-        <fieldset>
-            <legend>Membership Level</legend>
-            <label class="sbs"><input type="radio" name="membership" value="np"> Non Profit</label>
-            <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze</label>
-            <label class="sbs"><input type="radio" name="membership" value="silver"> Silver</label>
-            <label class="sbs"><input type="radio" name="membership" value="gold"> Gold</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Business Description</legend>
-            <label class="top">Tell us about your business <textarea rows="10"></textarea>
-        </fieldset>
-        <input type="submit" value="Enroll My Business" class="submitBtn">
-        <input type="hidden" id="dateForm" name="dateForm" value="currentdate">
-    </form>        
+  <main id="directoryMain">
+    <figure>
+          
   </main>
-  <footer>
+  <footer onload="date()">
     <div id="footer1">
       <div id="logofooter"><img src="images/logocccoruna.webp" alt="A Coruña Chamber logo"></div>
       <p><span id="chamberNameFooter">A Coruña Chamber of Commerce</span><br>
@@ -83,12 +59,7 @@
         <li>Last Update: <span id="date">DATE</span></li>
       </ul>
     </div>
-    <div>
-      <p><a href="https://bykarol.github.io/wdd230/" id="to-portal-page">&#x1f3e0; Portal Page</a></p>
-      <p></p>
-    </div>
 </footer>
 <script src="js/scripts.js" defer></script>
-<script src="js/formDate.js"></script>
 </body>
 </html>
