@@ -419,4 +419,13 @@ form label.top input:required:valid {
   border-left: green solid 6px;
 }
 
+/*----DIRECTORY page----*/
+#directoryMain {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  padding: 0 1%;
+  margin: 1% auto;
+}
+
 

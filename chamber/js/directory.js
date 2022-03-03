@@ -14,7 +14,7 @@ fetch(requestURL)
             let p2 = document.createElement('p');
             let p3 = document.createElement('p');
             let image = document.createElement('img');
-            image.setAttribute('src', companies[i].image);
+            image.setAttribute('src', companies[i].logo);
             image.setAttribute('alt', `Logo of ${companies[i].name}`);
             h2.textContent = `${companies[i].name}`;
             p1.textContent = `Address: ${companies[i].address}`;
