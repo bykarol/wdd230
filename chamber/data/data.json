@@ -1,84 +1,84 @@
 {
   "companies": [
     {
-      "image": "/images/directoryImg/bellezaalen.webp",
+      "image": "images/directoryImg/bellezaalen.webp",
       "name": "Belleza Allen",
       "address": "A Coruña 15001",
       "phone": 987654321,
       "website": "https://www.instagram.com/alen_belleza/"
     },
     {
-      "image": "/images/directoryImg/bykarolcit.webp",
+      "image": "images/directoryImg/bykarolcit.webp",
       "name": "KB Tecnología Digital",
       "address": "A Coruña 15002",
       "phone": 123456789,
       "website": "https://www.instagram.com/bykarol.cit/"
     },
     {
-      "image": "/images/directoryImg/chemex.webp",
+      "image": "images/directoryImg/chemex.webp",
       "name": "Chemex Café Bar",
       "address": "A Coruña 15003",
       "phone": 543219876,
       "website": "https://www.instagram.com/chemexcafebar/"
     },
     {
-      "image": "/images/directoryImg/corautos.webp",
+      "image": "images/directoryImg/corautos.webp",
       "name": "Corautos Detailing Car",
       "address": "A Coruña 15004",
       "phone": 543219876,
       "website": "https://www.instagram.com/corauto_detail_/"
     },
     {
-      "image": "/images/directoryImg/elbudare.webp",
+      "image": "images/directoryImg/elbudare.webp",
       "name": "El Budare Market",
       "address": "A Coruña 15005",
       "phone": 543219876,
       "website": "https://www.instagram.com/elbudarecoruna/"
     },
     {
-      "image": "/images/directoryImg/fresaCreativa.webp",
+      "image": "images/directoryImg/fresaCreativa.webp",
       "name": "Fresa Creativa",
       "address": "A Coruña 15006",
       "phone": 543219876,
       "website": "https://www.instagram.com/fresacreativa/"
     },
     {
-      "image": "/images/directoryImg/harrypotter.webp",
+      "image": "images/directoryImg/harrypotter.webp",
       "name": "La tienda que no debe ser nombrada",
       "address": "A Coruña 15007",
       "phone": 543219876,
       "website": "https://www.instagram.com/latiendaquenodebesernombrada/"
     },
     {
-      "image": "/images/directoryImg/isamarte.webp",
+      "image": "images/directoryImg/isamarte.webp",
       "name": "IsamArte",
       "address": "A Coruña 15008",
       "phone": 543219876,
       "website": "https://www.instagram.com/isamarte_/"
     },
     {
-      "image": "/images/directoryImg/lacreativa.webp",
+      "image": "images/directoryImg/lacreativa.webp",
       "name": "La Creativa Papelería",
       "address": "A Coruña 15009",
       "phone": 543219876,
       "website": "https://www.instagram.com/lacreativapapeleria/"
     },
     {
-      "image": "/images/directoryImg/partyland.webp",
+      "image": "images/directoryImg/partyland.webp",
       "name": "Partyland Coruña",
       "address": "A Coruña 15010",
       "phone": 543219876,
       "website": "https://www.instagram.com/partylandcoruna/"
     },
     {
-      "image": "/images/directoryImg/recunchinosVzlanos.webp",
+      "image": "images/directoryImg/recunchinosVzlanos.webp",
       "name": "Recunchiños Venezolanos",
       "address": "A Coruña 15011",
       "phone": 543219876,
       "website": "https://www.instagram.com/recunchinosvenezolanos/"
     },
     {
-      "image": "/images/directoryImg/ultramarinos.webp",
+      "image": "images/directoryImg/ultramarinos.webp",
       "name": "De todo un poco Ultramarinos",
       "address": "A Coruña 15012",
       "phone": 543219876,
