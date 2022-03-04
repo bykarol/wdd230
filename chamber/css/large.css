@@ -117,15 +117,6 @@ div.cards {
 .cards section {
   width: 25%;
 }
-
-.cards section img {
-  max-width: 100px;
-  box-shadow: 0 2px 15px rgb(49, 33, 33);
-  display: inline-flex;
-  margin: 0%;
-  padding-bottom: 0%;
-  border-radius: 50px;
-}
   
 
 

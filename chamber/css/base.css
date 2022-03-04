@@ -438,7 +438,11 @@ form label.top input:required:valid {
 }
 
 .cards section img {
-  display: none;
+  max-width: 100px;
+  box-shadow: 0 2px 15px rgb(49, 33, 33);
+  margin: 0%;
+  padding-bottom: 0%;
+  border-radius: 50px;
 }
 
 .cards section h2, .cards section p {
@@ -450,4 +454,28 @@ form label.top input:required:valid {
   overflow-wrap: break-word;
 }
 
+.businessBtns {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 1% 0;
+  background-color: white;
+  border: none;
+}
+
+#cardsBtn, #listsBtn {
+  padding: .5% 1%;
+  margin: 0 2%;
+  font-size: 1.6em;
+  cursor: pointer;
+  box-shadow: 0 2px 15px darkgray;
+  background-color: darkred;
+  color: white;
+  border-radius: 3px;
+}
+
+#cardsBtn:hover, #listsBtn:hover {
+  font-size: 2em;
+  background-color: darkgray;
+  color: darkred;
+}
 
