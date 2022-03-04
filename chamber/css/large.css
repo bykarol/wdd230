@@ -112,11 +112,35 @@ div.cards {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  width: auto;
+  margin: 0 auto;
 }
 
 .cards section {
   width: 25%;
 }
+
+/*listview*/
+#directoryMain #listToggle table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#directoryMain #listToggle table tr {
+  display:flex;
+  flex-direction: row;
+  justify-content:left;
+  margin: .5%;
+}
+
+
+
+#directoryMain #listToggle table tr td {
+	font-size: 1.2em;
+  padding: 2%;
+}
+
+
   
 
 

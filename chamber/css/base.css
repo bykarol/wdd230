@@ -428,6 +428,12 @@ form label.top input:required:valid {
   margin: 1% auto;
 }
 
+div.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .cards section {
     background-color: white;
     box-shadow: 0 2px 15px darkgray;
@@ -479,3 +485,43 @@ form label.top input:required:valid {
   color: darkred;
 }
 
+/*table View*/
+#directoryMain #listToggle table {
+  width: 100%;
+  margin: 0 auto;
+  font-size: .8em;
+}
+
+#directoryMain #listToggle table tr {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 1% 0;
+  border: thin solid darkred;
+  border-radius: 5px;
+}
+
+#directoryMain #listToggle table tr td {
+	padding: 2% 2%;
+  font-weight: bolder;
+  text-align: left;
+}
+
+#directoryMain #listToggle table tr td:first-child {
+  font-size: 1.2em;
+	font-family: 'Bebas Neue', cursive;
+  background-color: darkred;
+  color: white;
+  letter-spacing: .2em;
+}
+
+#directoryMain #listToggle table tr td:first-child:hover {
+  background-color: white;
+  color: darkred;
+}
+
+#directoryMain #listToggle tr:hover {
+  background-color: darkred;
+  color: white;
+  font-size: 1.2em;
+}
