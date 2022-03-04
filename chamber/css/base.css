@@ -428,4 +428,26 @@ form label.top input:required:valid {
   margin: 1% auto;
 }
 
+.cards section {
+    background-color: white;
+    box-shadow: 0 2px 15px darkgray;
+    margin: 2% 0;
+    padding: 2% 2%;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.cards section img {
+  display: none;
+}
+
+.cards section h2, .cards section p {
+  margin: .8rem;
+  padding: 0%;
+}
+
+.cards section a {
+  overflow-wrap: break-word;
+}
+
 

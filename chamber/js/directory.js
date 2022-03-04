@@ -13,13 +13,17 @@ fetch(requestURL)
             let p1 = document.createElement('p');
             let p2 = document.createElement('p');
             let p3 = document.createElement('p');
+            let webURL = document.createElement('a');
             let image = document.createElement('img');
             image.setAttribute('src', companies[i].logo);
             image.setAttribute('alt', `Logo of ${companies[i].name}`);
             h2.textContent = `${companies[i].name}`;
             p1.textContent = `Address: ${companies[i].address}`;
             p2.textContent = `Telephone: ${companies[i].phone}`;
-            p3.textContent = `${companies[i].website}`;
+            webURL.textContent = companies[i].website;
+            webURL.href = companies[i].website;
+            webURL.target = "_blank";
+            p3.appendChild(webURL);
             card.appendChild(image);
             card.appendChild(h2);
             card.appendChild(p1);
