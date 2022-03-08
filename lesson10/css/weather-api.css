@@ -1,0 +1,12 @@
+h1 {
+  text-shadow: 0 2px 15px gray;
+}
+
+#current-temp, #weathericon figcaption {
+  font-size: 1.2em;
+  color: darkblue;
+}
+
+hr {
+  color: lightblue;
+}
