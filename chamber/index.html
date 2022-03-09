@@ -63,13 +63,15 @@
     <div id="weather">
         <h2>Weather</h2>
         <div id="weatherInfo">
-          <img src="images/weather.webp" alt="Cloudy image" id="cloudyImg">
-          <p><span id="weatherC">33</span>°C</p>
-          <p>Party Cloudy</p>
+          <figure>
+            <img src="" alt="" id="weathericon">
+            <figcaption class="tempparagraph"></figcaption>
+          </figure>
+          <p class="tempparagraph"><span id="weatherC">33</span> °C</p>
         </div>
         <hr>
-        <p>Wind Speed: <span id="windSpeed">2.5 km/h</span></p>
-        <p>Wind Chill <span id="windC"></span></p>
+        <p class="tempparagraph">Wind Speed: <span id="windSpeed"></span> km/h</p>
+        <p class="tempparagraph">Wind Chill: <span id="windC"></span> °C</p>
     </div>
     <div id="news">
       <h2>News Release</h2>
@@ -124,6 +126,6 @@
       </ul>
     </div>
 </footer>
-<script src="js/windchill.js"></script>
+<script src="js/weather-api.js"></script>
   </body>
 </html>

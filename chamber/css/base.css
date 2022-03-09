@@ -187,8 +187,9 @@ h2 {
  border: none;
 }
 
-#weather #weatherInfo #weatherImg {grid-area: 1/2/3/2;}
-#weather #weatherInfo #weatherC {font-size: 1.5em; font-weight: bold;}
+#weather .tempparagraph {font-size: 1em; font-weight: bold;}
+#weather #weatherInfo #weatherC {font-size: 1.2em;}
+#weathericon {max-width: 100%;}
 
 #spotlights section:nth-child(3) {
   display: none;

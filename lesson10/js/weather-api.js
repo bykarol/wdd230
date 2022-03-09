@@ -1,6 +1,5 @@
 //FairBanks Alaska Id 5861897
 //API key is cfe0464f08f36f72ffc42988eb008adf
-//A Coruña ID 6357300
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5861897&appid=cfe0464f08f36f72ffc42988eb008adf";
 fetch(apiURL)
   .then((response) => response.json())
