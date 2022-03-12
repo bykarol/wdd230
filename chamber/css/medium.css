@@ -18,6 +18,11 @@
     max-width: 32px;
   }
 
+  #nav button {
+    font-size: 2rem;
+    width: 32px;;
+  }
+
   #headerDate {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;

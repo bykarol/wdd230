@@ -1,7 +1,6 @@
 /*Large view*/
 @media (min-width: 55em) {
   main {
-    width: 95%;
     overflow: hidden;
     display: grid;
     grid-gap: 1%;
