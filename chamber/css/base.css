@@ -322,6 +322,7 @@ hr {
   gap: 1em;
   margin-bottom: 1em;
   overflow: hidden;
+  z-index: -1;
 }
 
 #discoveryMain figure img[data-src] {
@@ -348,6 +349,7 @@ hr {
   flex-direction: column;
   width: 96%;
   padding: 0 1%;
+  z-index: -1;
 }
 
 #joinMain h1, #thanksMain h1 {
@@ -428,6 +430,7 @@ form label.top input:required:valid {
   width: 96%;
   padding: 0 1%;
   margin: 1% auto;
+  z-index: -1;
 }
 
 div.cards {
@@ -496,6 +499,7 @@ div.cards {
   width: 100%;
   margin: 0 auto;
   font-size: .8em;
+  z-index: -1;
 }
 
 #directoryMain #listToggle table tr {
