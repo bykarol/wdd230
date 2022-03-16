@@ -132,11 +132,43 @@ div.cards {
   margin: .5%;
 }
 
-
-
 #directoryMain #listToggle table tr td {
 	font-size: 1.2em;
   padding: 2%;
+}
+
+/*--------CONTACT HTML---------*/
+#contactMain {
+  font-size: 1.3em;
+}
+#contactMain div {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  border-left: thin solid lightgrey;
+  padding: 0;
+}
+
+#contactMain div p {
+  margin-top: 0;
+}
+
+#contactMain fieldset {
+  border: none;
+}
+
+#contactMain h1 {
+  display: none;
+}
+
+#contactMain {
+  flex-direction: row-reverse;
+}
+
+#contactMain form {
+  width: 50%;
 }
 
 

@@ -109,4 +109,13 @@
   font-size: large;
 }
 
+/*---------CONTACT HTML ----------------*/
+#contactMain div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
 }

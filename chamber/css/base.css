@@ -247,7 +247,7 @@ footer div:nth-child(2) {font-size: 0.5rem;}
 }
 
 
-#karolName, #chamberNameFooter { 
+#karolName, .chamberNameFooter { 
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 0.15rem;
 }
@@ -344,7 +344,7 @@ hr {
 }
 
 /*-----FORM---------*/
-#joinMain, #thanksMain {
+#joinMain, .thanksMain {
   display: flex;
   flex-direction: column;
   width: 96%;
@@ -352,7 +352,15 @@ hr {
   z-index: -1;
 }
 
-#joinMain h1, #thanksMain h1 {
+#contactMain {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  padding: 0 1%;
+  z-index: -1;
+}
+
+#joinMain h1, #thanksMain h1, #contactMain h1 {
   font-family: 'Girassol';
   font-size: 1.5rem;
   padding: .75rem;
@@ -534,4 +542,25 @@ div.cards {
   background-color: darkred;
   color: white;
   font-size: 1.2em;
+}
+
+/*---------------contact Html---------*/
+#contactMain div {
+  text-align: left;
+  border: none;
+}
+
+#contactMain div p {
+  padding-bottom: 0;
+}
+
+.contactSpan {
+  color: darkred;
+  letter-spacing: normal;
+}
+
+#contactMain div iframe {
+  box-shadow: 0 2px 15px darkgray;
+  margin: 0;
+  padding-top: 0;
 }
