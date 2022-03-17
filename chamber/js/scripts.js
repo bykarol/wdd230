@@ -78,6 +78,7 @@ date();
 
 /* ----------------- Banner -----------------------*/
 const banner = document.getElementById('banner');
+const hamBtn = document.getElementById('hamburgerBtn');
 let today = new Date();
 let day = today.getDay();
 
@@ -85,7 +86,13 @@ const showbanner = () => {
   banner.style.display = "block";
 };
 
-if (day == 1 || day == 2) {showbanner();
+const fixHamburgerBtn = () => {
+    hamBtn.style.top = "13%";
+};
+
+if (day == 1 || day == 2) {
+    showbanner();
+    fixHamburgerBtn();
 };
 
 /* ----------------------TOGGLE MENU ---------------------*/
