@@ -23,6 +23,7 @@ fetch(requestURL)
       toggleCard();
       displayCards(companies);
     });
+
   });
 
   function displayCards(companies) {
@@ -81,9 +82,9 @@ function displayList(companies) {
 function toggleList() {
   document.getElementById("listToggle").style.display = "block";
   document.getElementById("cardToggle").style.display = "none";
-}
+};
 
 function toggleCard() {
   document.getElementById("cardToggle").style.display = "flex";
   document.getElementById("listToggle").style.display = "none";
-}
+};
