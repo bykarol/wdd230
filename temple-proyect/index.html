@@ -16,6 +16,7 @@
   <body>
     <img src="images/icon-arrow-up.png" class="icon-up" alt="Go up"/>
     <header>
+    <h1 id="mainTitle">Temple Inn & Suites</h1>
     <div class="logoes">
       <picture>
         <source media="(min-width: 40em)" srcset="images/temple-inn-logo.png">
@@ -37,42 +38,74 @@
       <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo"></a>
       <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo"></a>
     </div>
+    <div class="mainBanner">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/smallBanner325x250.webp">
+        <source media="(max-width: 700px)" srcset="images/mediumBanner650x250.webp">
+        <img src="images/largeBanner1300x500.webp" alt="Idaho's Fall Temple">
+      </picture>
+    </div>
   </header>
+  <aside class="weatherContainer" id="weatherContainer">
+    <figure>
+        <img src="" alt="" id="weathericon">
+        <figcaption class="tempparagraph"></figcaption>
+    </figure>
+    <p class="tempparagraph"><span id="weatherC">33</span> °C</p>
+    <p class="tempparagraph">Humidity: <span id="humidity"></span></p>
+  </aside>
+  <aside class="bookNow">
+    <button value="bookNow" id="bookBtn">Book Now!</button>
+  </aside>
   <main>
-    <article class="mainBanner">
+    <article>
       <section>
-        <picture>
-          <source media="(max-width: 320px)" srcset="images/smallBanner250.webp">
-          <source media="(max-width: 600px)" srcset="images/mediumBanner500.webp">
-          <img src="images/originalBanner1353.webp" alt="Idaho's Fall Temple">
-        </picture>
+        <h2>Welcome to the Temple Inn & Suites!</h2>
+        <p>
+          A hotel chain based in Bethesda, MD, we build and manage hotel accommodations near The Church of Jesus Christ of 
+          Latter-day Saints temple locations around the world.
+        </p>
+        <p>
+          We provide specialized services that meet the needs of temple workers, patrons, and their families.
+          On this site you will find all the information about it.
+        </p>
       </section>
-      <section class="weatherContainer" id="weatherContainer">
-        <figure>
-            <img src="" alt="" id="weathericon">
-            <figcaption class="tempparagraph"></figcaption>
-        </figure>
-        <p class="tempparagraph"><span id="weatherC">33</span> °C</p>
-        <p class="tempparagraph">Wind Speed: <span id="windSpeed"></span> km/h</p>
-        <p class="tempparagraph">Wind Chill: <span id="windC"></span> °C</p>
-    </section>
+      <section class="spotlight">
+        <h2 id="spot1-h2">Temple of</h2>
+        <img id="spot1-img" src="" alt=""><br>
+        <q id="spot1-q">A peaceful place!</q>
+        <hr>
+        <p id="spot1-p1">Temple description</p>
+        <p id="spot1-p2">Temple Website</p>
+      </section>
+      <section class="contactUs">
+        <h2>Contact Us!</h2>
+        <form method="get" action="contactThanks.html">
+          <fieldset>
+          <label class="top">Your name* <input type="text" name="contactName" required></label>
+          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+          <label class="top">Your question/concern <textarea rows="10"></textarea>
+          </fieldset>
+          <button type="submit" value="ContactUs" class="submitBtn">Contact Us!</button>
+      </form>
+      </section>
     </article>
   </main>
   <footer>
     <div id="footer1">
-      <div id="logofooter"><img src="images/logocccoruna.webp" alt="A Coruña Chamber logo"></div>
-      <p><span id="chamberNameFooter">A Coruña Chamber of Commerce</span><br>
-      Av A Mariña 3<br>A Coruña, Spain 15007</p>
-      <p>info@corunacommerce.org<br>+(54) 5555-5555<br>
-      <a href="#">Location Map</a></p>
-    </div>
-    <hr>
+      <img src="images/temple-logo-small.webp" alt="Temple Inn and Suites Logo">
+      <p><span class="siteName">Temple Inn & Suites</span></p>
+      <p>info@corunacommerce.org<br>+(54) 5555-5555</p>
+      <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1647984641810!5m2!1ses!2ses" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <hr>
     <div id="footer2">
       <ul>
-        <li>&copy; <span id="current-year">Year</span> A Coruña Chamber</li>
-        <li><span id="karolName">Karol Bracho</span></li>
-        <li>WDD 230 Project</li>
-        <li><a href="https://bykarol.github.io/wdd230/" id="to-portal-page">&#x1f3e0; Portal Page</a> | Last Update: <span id="date">DATE</span></li>
+        <li>Temple Inn & Suites &copy; <span id="current-year">Year</span></li>
+        <li>Developed by <span id="karolName">Karol Bracho</span></li>
+        <li>WDD 230 Final Project | Last Update: <span id="date">DATE</span></li>
+        <li><a href="https://bykarol.github.io/wdd230/temple-proyect/references.html">References</a></li>
       </ul>
     </div>
 </footer>

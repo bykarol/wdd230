@@ -1,10 +1,7 @@
 /*Fonts: Great Vibes and libre Baskerville*/
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap');
 
-/********MOBILE VIEW ***************/
-/*.element {
-  background: var(--background-color);
-}*/
+/*---------------------MOBILE VIEW ----------------------*/
 :root {
   --bg-color: #332f2c;                  /* Special background color */
   --bg-generic: white;                  /* Background color genérico */
@@ -13,15 +10,88 @@
   --font-title: 'Great Vibes', cursive;   /* font family for titles */
   --font-p: 'Libre Baskerville', serif;   /* font family for paragraphs */
   --shadow: 0 2px 15px darkgray;       /* Shadow style for boxes */
+  --bg-form-input: rgba(0, 0, 0, 0.1); /* Background color of the inputs in the form */
 }
 
+body {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mainTitle {
+  display: none;
+}
+
+/*BANNER*/
+.mainBanner picture {
+  position: relative;
+  width: 100%;
+}
+
+.mainBanner picture img, .mainBanner picture source {
+  max-width: 100%;
+}
+
+/*WEATHER*/
 .weatherContainer {
   background-color: var(--bg-color);
-  width: 20%;
+  width: 50%;
   font-family: var(--font-p);
   color: var(--bg-generic);
 }
 
+/*CONTACT FORM*/
+.contactUs form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUs form label.top {
+  font-family: var(--font-p);
+  display: block;
+  padding-top: 1rem;
+  color: var(--color-p);
+  font-size: .8rem;
+}
+
+.contactUs form label.top input, form label.top select, form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px var(--bg-color);
+  border-radius: 4px;
+  padding: .75rem;
+  color: var(--color-p);
+  width: 100%;
+  max-width: 20rem;
+  background-color: var(--bg-form-input);
+}
+
+.contactUs form .submitBtn {
+  border: none;
+  font-family: var(--font-p);
+  background-color: var(--bg-color);
+  color: var(--bg-generic);
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 1rem 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/*GO Up ARROW*/
 .icon-up {
   position: fixed;
   bottom: 20px;
@@ -32,12 +102,12 @@
   opacity: 90%;
 }
 
-/******** MEDIUM VIEW ***************/
+/* ------------------- MEDIUM VIEW ---------------------------*/
 @media screen and (min-width: 40em) {
 
 }
 
-/******** LARGE VIEW ***************/
+/*---------------------- LARGE VIEW --------------------------*/
 @media screen and (min-width: 56em) {
 
 }
