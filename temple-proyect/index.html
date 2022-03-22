@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Karol Bracho">
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD 
+    that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of 
+    Latter-day Saints around the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/templestyles.css">
+    <script src="js/jquery-latest.js"></script>
+  </head>
+  <body>
+    <aside class="weatherContainer" id="weatherContainer">
+      <p>Weather</p>
+    </aside>
+    <img src="images/icon-arrow-up.png" class="icon-up" alt="Go up"/>
+    <header>
+    <div class="logoes">
+      <img src="images/temple-logo-small.webp" data-src="images/temple-inn-logo.png" alt="Temple Inn & Suites Logo" class="logo">
+    </div>
+    <div class="headings">
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li class="active"><a href="https://bykarol.github.io/wdd230/chamber/">Home</a></li>
+          <li><a href="https://bykarol.github.io/wdd230/chamber/discovery.html">Discover</a></li>
+          <li><a href="https://bykarol.github.io/wdd230/chamber/directory.html">Directory</a></li>
+          <li><a href="https://bykarol.github.io/wdd230/chamber/join.html">Join</a></li>
+          <li><a href="https://bykarol.github.io/wdd230/chamber/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="images/FBlogo.png" alt="Facebook logo"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="images/INlogo.png" alt="Linkedin Logo"></a>
+    </div>
+  </header>
+  <main>
+    <div id="hero">
+        <h2>Welcome to Coruña</h2>
+        <picture class="heroImg">
+          <source srcset="images/wdd230-medium.png" media="(min-width: 40em) and (max-width: 54.9em)" class="heroImages">
+          <source srcset="images/wdd230-large.png" media="(min-width: 55em)" class="heroImages">
+          <img src="images/wdd230-small.png" alt="A Coruña hero image" class="heroImages">
+      </picture>
+        <button id="joinBtn">Join to the chamber</button>
+    </div>
+    <div id="event">
+      <h2>Ribbon Cutting</h2>
+      <h3>💎 The Diamond Shack</h3>
+      <p>Join us for the gran opening of The Diamond Shack, Thursday at 1:00pm <br><a href="#">more info...</a></p>
+    </div>
+    <div id="weather">
+        <h2>Weather</h2>
+        <div id="weatherInfo">
+          <figure>
+            <img src="" alt="" id="weathericon">
+            <figcaption class="tempparagraph"></figcaption>
+          </figure>
+          <p class="tempparagraph"><span id="weatherC">33</span> °C</p>
+        </div>
+        <hr>
+        <p class="tempparagraph">Wind Speed: <span id="windSpeed"></span> km/h</p>
+        <p class="tempparagraph">Wind Chill: <span id="windC"></span> °C</p>
+    </div>
+    <div id="news">
+      <h2>News Release</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra mauris in aliquam sem. Sit amet facilisis magna etiam tempor. Morbi quis commodo odio aenean sed. Donec enim diam vulputate ut pharetra. Elementum nibh tellus molestie nunc non blandit. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Orci nulla pellentesque dignissim enim sit amet venenatis. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. A condimentum vitae sapien pellentesque. Lorem mollis aliquam ut porttitor leo a diam.</p>
+    </div>
+    <div id="spotlights">
+        <section id="spot1">
+          <h2 id="spot1-h2">Thankful Transport</h2>
+          <img id="spot1-img" src="images/truck.webp" alt="Red Truck"><br>
+          <q id="spot1-q">We get it there for you</q>
+          <hr>
+          <p id="spot1-p1">hello@thankfulltransport.com</p>
+          <p id="spot1-p2">+999-9999-9999 Website</p>
+        </section>
+        <section id="spot2">
+          <h2 id="spot2-h2">Code Primera</h2>
+          <img id="spot2-img" src="images/code.webp" alt="A boy with a pencil"><br>
+          <em id="spot2-q">We are the best in the town.</em>
+          <hr>
+          <p id="spot2-p1">contact@codeprimera.com</p>
+          <p id="spot2-p2">+999-9999-9999 | Website</p>
+        </section>
+        <section id="spot3">
+          <h2 id="spot3-h2">Build A Treefort</h2>
+          <img id="spot3-img" src="images/treefort.webp" alt="Tree Fort"><br>
+          <em id="spot3-q">Come to know us!</em>
+          <hr>
+          <p id="spot3-p1">builda@treefort.com</p>
+          <p id="spot3-p2">+999-9999-9999 Website</p>
+        </section>
+    </div>
+    <div id="join">
+        <h2>Join Us!</h2>
+        <p id="joinp">Discover how to join the Chamber of Commerce and how it will benefit your organization!</p>
+    </div>
+  </main>
+  <footer>
+    <div id="footer1">
+      <div id="logofooter"><img src="images/logocccoruna.webp" alt="A Coruña Chamber logo"></div>
+      <p><span id="chamberNameFooter">A Coruña Chamber of Commerce</span><br>
+      Av A Mariña 3<br>A Coruña, Spain 15007</p>
+      <p>info@corunacommerce.org<br>+(54) 5555-5555<br>
+      <a href="#">Location Map</a></p>
+    </div>
+    <hr>
+    <div id="footer2">
+      <ul>
+        <li>&copy; <span id="current-year">Year</span> A Coruña Chamber</li>
+        <li><span id="karolName">Karol Bracho</span></li>
+        <li>WDD 230 Project</li>
+        <li><a href="https://bykarol.github.io/wdd230/" id="to-portal-page">&#x1f3e0; Portal Page</a> | Last Update: <span id="date">DATE</span></li>
+      </ul>
+    </div>
+</footer>
+<script src="js/weather-api.js"></script>
+</body>
+</html>

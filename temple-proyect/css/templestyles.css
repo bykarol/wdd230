@@ -1,0 +1,23 @@
+/*Fonts: Great Vibes and libre Baskerville*/
+
+/********MOBILE VIEW ***************/
+
+.icon-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 2px 15px darkgray;
+  padding: 5px 5px;
+  cursor: pointer;
+  opacity: 90%;
+}
+
+/******** MEDIUM VIEW ***************/
+@media screen and (min-width: 40em) {
+
+}
+
+/******** LARGE VIEW ***************/
+@media screen and (min-width: 56em) {
+
+}
