@@ -1,12 +1,32 @@
 /*Fonts: Great Vibes and libre Baskerville*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap');
 
 /********MOBILE VIEW ***************/
+/*.element {
+  background: var(--background-color);
+}*/
+:root {
+  --bg-color: #332f2c;                  /* Special background color */
+  --bg-generic: white;                  /* Background color genérico */
+  --color-title: #C8AD7E;               /* font color for titles */
+  --color-p: #332f2c;                   /* font color for paragraphs */
+  --font-title: 'Great Vibes', cursive;   /* font family for titles */
+  --font-p: 'Libre Baskerville', serif;   /* font family for paragraphs */
+  --shadow: 0 2px 15px darkgray;       /* Shadow style for boxes */
+}
+
+.weatherContainer {
+  background-color: var(--bg-color);
+  width: 20%;
+  font-family: var(--font-p);
+  color: var(--bg-generic);
+}
 
 .icon-up {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  box-shadow: 0 2px 15px darkgray;
+  box-shadow: var(--shadow);
   padding: 5px 5px;
   cursor: pointer;
   opacity: 90%;
