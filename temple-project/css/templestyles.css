@@ -19,46 +19,54 @@ body {
   justify-content: center;
 }
 
-#mainTitle {
-  display: none;
-}
-
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   flex: 1 1 auto;
-  position: sticky;
   box-shadow: var(--shadow);
 }
 
-.socialMedia {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+header #mainTitle {
+  font-family: var(--font-title);
+  color: var(--color-p);
+  text-shadow: var(--shadow);
 }
 
-.socialMedia img {
+header #logo img {
+  width: 64px;
+}
+
+header .socialMedia {
+  display: flex;
+  flex-direction: row;
+}
+
+header .socialMedia img {
   width: 32px;
+  margin: 0 2px;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
 }
 
 /*NAVIGATION MENU*/
-header nav {
-  font-family: var(--font-p);
-  font-size: 1rem;
-}
-
-header nav button {
+.navBtn {
   background: var(--bg-color);
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border-radius: 4px;
   color: var(--bg-generic);
   cursor: pointer;
   margin: 0%;
   padding-top: 3px;
   padding-bottom: 3px;
+  box-shadow: var(--shadow);
+}
+
+nav {
+  font-family: var(--font-p);
+  font-size: 1rem;
 }
 
 nav ul {display: none;}
@@ -76,13 +84,13 @@ nav ul.open {
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
-header .navigation ul li {
+.navigation ul li {
   padding: 1%;
   list-style: none;
   border-top: 1px solid rgb(0, 0, 0, 0.5);
 }
 
-header .navigation ul li a {
+.navigation ul li a {
   display: block;
   text-decoration: none;
   color: whitesmoke;
@@ -99,7 +107,7 @@ header .navigation ul li a {
 }
 
 /*Nav hover*/
-header .navigation ul li:hover::marker, header .navigation ul li a:hover {
+.navigation ul li:hover::marker, .navigation ul li a:hover {
   content: "｡★｡";
   color: var(--color-title);
   transition-duration: .5s;

@@ -17,28 +17,25 @@
   <body>
     <img src="images/icon-arrow-up.png" class="icon-up" alt="Go up"/>
     <header>
+      <picture id="logo">
+        <source media="(min-width: 40em)" srcset="images/temple-inn-logo.png">
+        <img src="images/temple-logo-small.webp" alt="Temple Inn & Suites Logo" class="logo">
+      </picture>
       <h1 id="mainTitle">Temple Inn & Suites</h1>
-      <div class="logoes">
-        <picture>
-          <source media="(min-width: 40em)" srcset="images/temple-inn-logo.png">
-          <img src="images/temple-logo-small.webp" alt="Temple Inn & Suites Logo" class="logo">
-        </picture>
-      </div>
       <div class="socialMedia">
-        <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo"></a>
-        <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo"></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo" id="logoFB"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo" id="logoIG"></a>
       </div>
-      <nav class="navigation">
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-        <ul id="primaryNav">
-          <li class="active"><a href="https://bykarol.github.io/wdd230/temple-project/">Home</a></li>
-          <li><a href="https://bykarol.github.io/wdd230/temple-project/temples.html">Temples</a></li>
-          <li><a href="https://bykarol.github.io/wdd230/temple-project/reservation.html">Reservation</a></li>
-          <li><a href="https://bykarol.github.io/wdd230/temple-project/services.html">Services</a></li>
-        </ul>
-      </nav>
-      </div>
+      <button class="navBtn" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
   </header>
+  <nav class="navigation">
+    <ul id="primaryNav">
+      <li class="active"><a href="https://bykarol.github.io/wdd230/temple-project/">Home</a></li>
+      <li><a href="https://bykarol.github.io/wdd230/temple-project/temples.html">Temples</a></li>
+      <li><a href="https://bykarol.github.io/wdd230/temple-project/reservation.html">Reservation</a></li>
+      <li><a href="https://bykarol.github.io/wdd230/temple-project/services.html">Services</a></li>
+    </ul>
+  </nav>
   <aside class="weatherContainer" id="weatherContainer">
     <figure>
         <img src="" alt="" id="weathericon">
