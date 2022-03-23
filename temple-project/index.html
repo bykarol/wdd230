@@ -12,19 +12,23 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/templestyles.css">
     <script src="js/jquery-latest.js"></script>
+    <script src="js/scripts.js" defer></script>
   </head>
   <body>
     <img src="images/icon-arrow-up.png" class="icon-up" alt="Go up"/>
     <header>
-    <h1 id="mainTitle">Temple Inn & Suites</h1>
-    <div class="logoes">
-      <picture>
-        <source media="(min-width: 40em)" srcset="images/temple-inn-logo.png">
-        <img src="images/temple-logo-small.webp" alt="Temple Inn & Suites Logo" class="logo">
-      </picture>
-    </div>
-    <div class="headings">
-      <nav>
+      <h1 id="mainTitle">Temple Inn & Suites</h1>
+      <div class="logoes">
+        <picture>
+          <source media="(min-width: 40em)" srcset="images/temple-inn-logo.png">
+          <img src="images/temple-logo-small.webp" alt="Temple Inn & Suites Logo" class="logo">
+        </picture>
+      </div>
+      <div class="socialMedia">
+        <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo"></a>
+      </div>
+      <nav class="navigation">
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
           <li class="active"><a href="https://bykarol.github.io/wdd230/temple-project/">Home</a></li>
@@ -33,18 +37,7 @@
           <li><a href="https://bykarol.github.io/wdd230/temple-project/services.html">Services</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="socialMedia">
-      <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo"></a>
-      <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo"></a>
-    </div>
-    <div class="mainBanner">
-      <picture>
-        <source media="(max-width: 375px)" srcset="images/smallBanner325x250.webp">
-        <source media="(max-width: 700px)" srcset="images/mediumBanner650x250.webp">
-        <img src="images/largeBanner1300x500.webp" alt="Idaho's Fall Temple">
-      </picture>
-    </div>
+      </div>
   </header>
   <aside class="weatherContainer" id="weatherContainer">
     <figure>
@@ -59,8 +52,15 @@
   </aside>
   <main>
     <article>
+      <div class="mainBanner">
+        <picture>
+          <source media="(max-width: 375px)" srcset="images/smallBanner325x250.webp">
+          <source media="(max-width: 700px)" srcset="images/mediumBanner650x250.webp">
+          <img src="images/largeBanner1300x500.webp" alt="Idaho's Fall Temple">
+        </picture>
+      </div>
+      <h2>Welcome to the Temple Inn & Suites!</h2>
       <section>
-        <h2>Welcome to the Temple Inn & Suites!</h2>
         <p>
           A hotel chain based in Bethesda, MD, we build and manage hotel accommodations near The Church of Jesus Christ of 
           Latter-day Saints temple locations around the world.
@@ -72,9 +72,8 @@
       </section>
       <section class="spotlight">
         <h2 id="spot1-h2">Temple of</h2>
-        <img id="spot1-img" src="" alt=""><br>
-        <q id="spot1-q">A peaceful place!</q>
-        <hr>
+        <q id="spot1-q">A peaceful place!</q><br>
+        <img id="spot1-img" src="images/CaracasTemple.png" alt="Caracas Temple LDS">
         <p id="spot1-p1">Temple description</p>
         <p id="spot1-p2">Temple Website</p>
       </section>
@@ -87,7 +86,7 @@
             <label class="top">Your question/concern <textarea rows="10"></textarea></label>
           </fieldset>
           <button type="submit" value="ContactUs" class="submitBtn">Contact Us!</button>
-        </form>
+      </form>
       </section>
     </article>
   </main>

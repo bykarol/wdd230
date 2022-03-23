@@ -14,8 +14,6 @@
 }
 
 body {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +21,90 @@ body {
 
 #mainTitle {
   display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 1 auto;
+  position: sticky;
+  box-shadow: var(--shadow);
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socialMedia img {
+  width: 32px;
+}
+
+/*NAVIGATION MENU*/
+header nav {
+  font-family: var(--font-p);
+  font-size: 1rem;
+}
+
+header nav button {
+  background: var(--bg-color);
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  color: var(--bg-generic);
+  cursor: pointer;
+  margin: 0%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+nav ul {display: none;}
+nav ul.open {
+  display: block;
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow);
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+header .navigation ul li {
+  padding: 1%;
+  list-style: none;
+  border-top: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+header .navigation ul li a {
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: .8rem 1vw;
+}
+
+.active {
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+.active::marker {
+  content: "｡★｡";
+}
+
+/*Nav hover*/
+header .navigation ul li:hover::marker, header .navigation ul li a:hover {
+  content: "｡★｡";
+  color: var(--color-title);
+  transition-duration: .5s;
+  transition-timing-function:ease-in-out;
+  font-size: 1.2rem;  
 }
 
 /*BANNER*/
