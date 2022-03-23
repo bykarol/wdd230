@@ -16,8 +16,8 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
+
 
 header {
   display: flex;
@@ -25,17 +25,17 @@ header {
   align-items: center;
   justify-content: space-around;
   flex: 1 1 auto;
+  background-color: var(--bg-generic);
   box-shadow: var(--shadow);
 }
 
 header #mainTitle {
-  font-family: var(--font-title);
-  color: var(--color-p);
-  text-shadow: var(--shadow);
+  display: none;
 }
 
+/*LOGO*/
 header #logo img {
-  width: 64px;
+  width: 150px;
 }
 
 header .socialMedia {
@@ -44,10 +44,12 @@ header .socialMedia {
 }
 
 header .socialMedia img {
-  width: 32px;
-  margin: 0 2px;
-  box-shadow: var(--shadow);
-  border-radius: 5px;
+  width: 20px;
+  margin: 0 3px;
+}
+
+header .socialMedia img:hover {
+  width: 25px;
 }
 
 /*NAVIGATION MENU*/
@@ -60,7 +62,7 @@ header .socialMedia img {
   cursor: pointer;
   margin: 0%;
   padding-top: 3px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   box-shadow: var(--shadow);
 }
 
@@ -115,22 +117,91 @@ nav ul.open {
   font-size: 1.2rem;  
 }
 
+/*MAIN*/
+main {
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+  margin-top: 10px;
+}
+
 /*BANNER*/
+.mainBanner {
+  padding: 0;
+  margin-top: 0;
+}
+
 .mainBanner picture {
   position: relative;
   width: 100%;
+  z-index: -2;
 }
 
 .mainBanner picture img, .mainBanner picture source {
+  width: 100%;
+}
+
+/*SECTIONS*/
+section {
+  box-shadow: var(--shadow);
+  font-family: var(--color-p);
+  padding: .5rem 1.5rem;
+  margin: 3% 0;
+  text-align: justify;
+}
+
+section h2 {
+  font-family: var(--font-title);
+  text-shadow: var(--shadow);
+  padding-bottom: 0%;
+}
+
+hr {
+  border: thin dashed var(--bg-form-input);
+  width: 85%;
+  margin-left: inherit;
+}
+
+.spotlights {
+  position: relative;
+}
+
+.spotlights img {
   max-width: 100%;
 }
 
-/*WEATHER*/
+.spot2, .spot3 {display: none;}
+
+ /*WEATHER & BOOKING DIV*/
 .weatherContainer {
-  background-color: var(--bg-color);
-  width: 50%;
   font-family: var(--font-p);
   color: var(--bg-generic);
+	border: 1px thin var(--bg-color);
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #333;
+  background: radial-gradient(var(--bg-form-input), var(--bg-color));
+	opacity: .9;
+}
+
+.bookNow {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  width: 120px;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  padding: 2%;
+  z-index: -1;
+}
+
+.bookNow #bookBtn {
+  width: 100%;
+  font-family: var(--font-title);
+  background: radial-gradient(var(--bg-form-input), var(--bg-color));
+  font-size: 1.3rem;
+  color: var(--bg-generic);
+  cursor: pointer;
+  padding: 4%;
 }
 
 /*CONTACT FORM*/
@@ -147,6 +218,10 @@ nav ul.open {
   font-size: .8rem;
 }
 
+fieldset {
+  position: relative;
+}
+
 .contactUs form label.top input, form label.top select, form label.top textarea {
   -webkit-appearance: none;
   display: block;
@@ -155,8 +230,8 @@ nav ul.open {
   border-radius: 4px;
   padding: .75rem;
   color: var(--color-p);
-  width: 100%;
-  max-width: 20rem;
+  max-width: 100%;
+  width: 90%;
   background-color: var(--bg-form-input);
 }
 
@@ -171,6 +246,7 @@ nav ul.open {
   width: 96%;
   max-width: 20rem;
   cursor: pointer;
+  box-shadow: var(--shadow);
 }
 
 form label.top input:required {
@@ -184,20 +260,93 @@ form label.top input:required:valid {
 /*GO Up ARROW*/
 .icon-up {
   position: fixed;
+  width: 32px;
   bottom: 20px;
   right: 20px;
   box-shadow: var(--shadow);
+  border-radius: 50px;
   padding: 5px 5px;
   cursor: pointer;
-  opacity: 90%;
+  opacity: .8;
+  background-color: var(--bg-generic);
+}
+
+/*FOOTER*/
+footer {
+  background-color: var(--bg-color);
+  color: var(--bg-generic);
+  font-family: var(--font-p);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: .9rem;
+}
+
+#footer1 img {
+  width: 150px;
+  margin: 0%;
+  padding: 0%;
+}
+
+#footer1 iframe {
+  margin-bottom: 2%;
+}
+
+#footer1 p {
+  padding: 0%;
+  margin: 1%;
+}
+
+#footer2 {
+  background-color: black;
+  font-size: .7rem;
+  border-top: thin solid var(--bg-generic);
+}
+
+#footer2 ul li {
+  list-style: none;
+  padding-bottom: 1%;
 }
 
 /* ------------------- MEDIUM VIEW ---------------------------*/
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 35em) {
+  .weatherContainer {
+    position: absolute;
+    top: 20%;
+    left: 50px;
+  }
+
+  /*LOGO MEDIUM*/
+  header #logo img {
+    width: 100px;
+  }
+
+  /*MENU*/
+  .navBtn {
+    display: none;
+  }
+
+  /*MAIN TITLE*/
+  header #mainTitle {
+    font-family: var(--font-title);
+    color: var(--color-p);
+    text-shadow: var(--shadow);
+    font-size: 1.5rem;
+    display: block;
+  }
 
 }
 
 /*---------------------- LARGE VIEW --------------------------*/
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 45em) {
+  /*LOGO LARGE*/
+  header #logo img {
+    width: 80%;
+  }
+
+  /*MAIN TITLE*/
+  header #mainTitle {
+    font-size: 1.7rem;
+  }
 
 }
