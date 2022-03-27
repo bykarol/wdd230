@@ -54,16 +54,16 @@ header .socialMedia img:hover {
 
 /*NAVIGATION MENU*/
 .navBtn {
-  background: var(--bg-color);
+  background: transparent;
   border: none;
   font-size: 1.3rem;
   border-radius: 4px;
-  color: var(--bg-generic);
+  color: var(--bg-color);
+  text-shadow: var(--shadow);
   cursor: pointer;
   margin: 0%;
   padding-top: 3px;
-  padding-bottom: 5px;
-  box-shadow: var(--shadow);
+  padding-bottom: 5px;  
 }
 
 nav {
@@ -168,6 +168,7 @@ hr {
 
 .spotlights img {
   max-width: 100%;
+  box-shadow: 0 2px 15px var(--bg-color);
 }
 
 .spot2, .spot3 {display: none;}
@@ -185,7 +186,7 @@ hr {
 
 .bookNow {
   position: absolute;
-  top: 30%;
+  top: 20%;
   right: 5%;
   width: 120px;
   box-shadow: var(--shadow);
@@ -269,6 +270,7 @@ form label.top input:required:valid {
   cursor: pointer;
   opacity: .8;
   background-color: var(--bg-generic);
+  z-index: 1;
 }
 
 /*FOOTER*/
@@ -282,13 +284,18 @@ footer {
   font-size: .9rem;
 }
 
+#footer1 #foot1-2 {
+  position: relative;
+}
+
 #footer1 img {
   width: 150px;
   margin: 0%;
   padding: 0%;
 }
 
-#footer1 iframe {
+#footer1 #foot1-2 iframe {
+  max-width: 100%;
   margin-bottom: 2%;
 }
 
@@ -308,12 +315,23 @@ footer {
   padding-bottom: 1%;
 }
 
+#footer2 ul li a {
+  text-decoration: none;
+  color: var(--bg-generic);
+}
+
+#footer2 ul li a:hover {
+  font-size: .9rem;
+  color: var(--color-title);
+}
+
 /* ------------------- MEDIUM VIEW ---------------------------*/
 @media screen and (min-width: 35em) {
   .weatherContainer {
     position: absolute;
     top: 20%;
-    left: 50px;
+    left: 40px;
+    z-index: -1;
   }
 
   /*LOGO MEDIUM*/
@@ -321,9 +339,20 @@ footer {
     width: 100px;
   }
 
-  /*MENU*/
-  .navBtn {
-    display: none;
+  /*SECTIONS*/
+  .spot2 {
+    display: block;
+  }
+
+  .spotlights {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .spotlights #spot1-img, .spotlights #spot2-img, .spotlights #spot3-img {
+    width: 90%;
+    padding: 2%;
+    border-radius: 4px;;
   }
 
   /*MAIN TITLE*/
@@ -335,6 +364,20 @@ footer {
     display: block;
   }
 
+  /*FOOTER*/
+  #footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #foot1-2 {
+    margin: 2%;
+  }
+
+  #foot1-2 iframe {
+    margin-bottom: 0;
+  }
 }
 
 /*---------------------- LARGE VIEW --------------------------*/
@@ -347,6 +390,30 @@ footer {
   /*MAIN TITLE*/
   header #mainTitle {
     font-size: 1.7rem;
+  }
+
+  /*SECTION*/
+  /*SECTIONS*/
+  .spot3 {
+    display: block;
+  }
+
+  /*FOOTER*/
+  #footer2 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1%;
+  }
+
+  #footer2 ul li {
+    flex: 1 1 auto;
+    padding: 1%;
+    border-right: 1px solid var(--bg-generic);
+  }
+
+  #footer2 ul li:last-child{
+    border-right: none;
   }
 
 }
