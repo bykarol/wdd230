@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Karol Bracho">
+    <meta name="description" content="Find your prefered Temple and add it to your fav ones!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Temples</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/templestyles.css">
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/temples.js" defer></script>
+  </head>
+  <body>
+    <img src="images/up-arrow.png" class="icon-up" alt="Go up"/>
+    <header>
+      <a href="index.html"><picture id="logo">
+        <source media="(min-width: 35em)" srcset="images/temple-logo-small.webp">
+        <img src="images/temple-inn-logo.png" alt="Temple Inn & Suites Logo" class="logo">
+      </picture></a>
+      <h1 id="mainTitle">Temple Inn & Suites</h1>
+      <div class="socialMedia">
+        <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo" id="logoFB"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo" id="logoIG"></a>
+      </div>
+      <button class="navBtn" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+  </header>
+  <nav class="navigation">
+    <ul id="primaryNav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="temples.html">Temples</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+  </nav>
+  <main id="mainTemples">
+    <h2>Temple List</h2>
+    <div class="templeBtns"><button id="cardsBtn">&#10998;&#10998;&#10998;</button><button id="listsBtn">&#9783;</button></div>
+    <div class="cards" id="cardToggle"></div>
+    <div class="lists" id="listToggle"></div>
+  </main>
+  <footer>
+    <div id="footer1">
+      <div id="foot1-1">
+      <img src="images/temple-inn-logo.png" alt="Temple Inn and Suites Logo">
+      <p>info@templesuites.com</p>
+      <p>+(881) 5555-5555</p>
+      <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+    </div>
+    <div id="foot1-2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1647984641810!5m2!1ses!2ses" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div id="footer2">
+    <ul>
+      <li>Temple Inn & Suites &copy; <span id="current-year">Year</span></li>
+      <li>Developed by <span id="karolName">Karol Bracho</span></li>
+      <li>WDD 230 Final Project</li>
+      <li>Updated: <span id="date">DATE</span></li>
+      <li><a href="https://bykarol.github.io/wdd230/temple-proyect/references.html" target="_blank"><abbr title="Go to external link">References ↪</abbr></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

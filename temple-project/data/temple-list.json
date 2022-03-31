@@ -1,0 +1,99 @@
+{
+  "temples": [
+    {
+      "image": "images/templeimg/caracas-venezuela-temple.webp",
+      "name": "Caracas Venezuela Temple",
+      "address": "Avenida. C con Calle C-1, Urb Caurimare Caracas 1062-A, Dependencias Federales Venezuela",
+      "phone": "(58) 212-985-3051",
+      "email":"N/A",
+      "closure": "Monday, 11 April 2022 - Monday, 25 April 2022 and Monday, 10 October 2022 - Monday, 19 December 2022",
+      "services": {
+          "clothing": "unavailable",
+          "cafeteria": "unavailable",
+          "housing": "unavailable",
+          "distributioncenter": "nearby"
+      },
+      "history": {
+        "announced": "30 September 1995",
+        "groundbreaking": "10 January 1999",
+        "dedicated": "20 August 2000"
+      }
+    },
+    {
+      "image": "images/templeimg/bogota-colombia-temple.webp",
+      "name": "Bogotá Colombia Temple",
+      "address": "Carrera 46 N°127-45 Bogotá Distrito Capital Colombia",
+      "phone": "(57) 1-625-8000",
+      "email":"N/A",
+      "closure": "Saturday, 2 April 2022; Wednesday, 20 July 2022; Monday, 19 September 2022 - Monday, 28 November 2022; Thursday, 8 December 2022; Saturday, 24 & 31 December 2022; 1 January 2023",
+      "services": {
+          "clothing": "available",
+          "cafeteria": "unavailable",
+          "housing": "unavailable",
+          "distributioncenter": "nearby"
+      },
+      "history": {
+        "announced": "7 April 1984",
+        "groundbreaking": "26 June 1993",
+        "dedicated": "24 April 1999"
+      }
+    },
+    {
+      "image": "images/templeimg/stodomingo-dominican-temple.webp",
+      "name": "Santo Domingo Dominican Republic Temple",
+      "address": "Avenida Bolivar N° 825 Los Robles, Santo Domingo 10106 Distrito Nacional, Dominican Republic",
+      "phone": "(1) 809-731-2000",
+      "email":"N/A",
+      "closure": "Saturday, 2 April 2022 - Sunday, 3 April 2022 (Limited Operations); Monday, 1 August 2022 - Monday, 10 October 2022; Saturday, 1 October 2022 - Sunday, 2 October 2022 (Limited Operations)",
+      "services": {
+          "clothing": "available",
+          "cafeteria": "unavailable",
+          "housing": "unavailable",
+          "distributioncenter": "nearby"
+      },
+      "history": {
+        "announced": "16 November 1993",
+        "groundbreaking": "18 August 1996",
+        "dedicated": "17 September 2000"
+      }
+    },
+    {
+      "image": "images/templeimg/guayaquil-ecuador-temple.webp",
+      "name": "Guayaquil Ecuador Temple",
+      "address": "Calle Rosendo Maridueña 8845 Urdesa Norte — Guayaquil, Ecuador",
+      "phone": "(593) 4-371-8100",
+      "email":"N/A",
+      "closure": "Monday, 7 March 2022 - Monday, 16 May 2022; Friday, 12 August 2022 - Monday, 15 August 2022 (Limited Operations); Thursday, 3 November 2022 - Monday, 7 November 2022 (Limited Operations)",
+      "services": {
+          "clothing": "available",
+          "cafeteria": "unavailable",
+          "housing": "unavailable",
+          "distributioncenter": "nearby"
+      },
+      "history": {
+        "announced": "31 March 1982",
+        "groundbreaking": "10 August 1996",
+        "dedicated": "1 August 1999"
+      }
+    },
+    {
+      "image": "images/templeimg/madrid-spain-temple.webp",
+      "name": "Madrid Spain Temple",
+      "address": "Calle Del Templo No 2 Madrid 28030 Madrid, Spain",
+      "phone": "(34) 91-214-2607",
+      "email":"N/A",
+      "closure": "Saturday, 2 April 2022 (Limited Operations); Monday, 6 June 2022 - Monday, 15 August 2022; Saturday, 1 October 2022 (Limited Operations); Saturday, 24 & 31 December 2022",
+      "services": {
+          "clothing": "available",
+          "cafeteria": "unavailable",
+          "housing": "available",
+          "distributioncenter": "nearby"
+      },
+      "history": {
+        "announced": "4 April 1993",
+        "groundbreaking": "11 June 1996",
+        "dedicated": "19 March 1999"
+      }
+    }
+  ]
+}
