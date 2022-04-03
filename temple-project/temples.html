@@ -29,16 +29,21 @@
   </header>
   <nav class="navigation">
     <ul id="primaryNav">
-      <li><a href="index.html">Home</a></li>
-      <li class="active"><a href="temples.html">Temples</a></li>
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="temples.html">Temples</a></li>
       <li><a href="reservation.html">Reservation</a></li>
-      <li><a id="aServices" href="services.html">Services</a></li>
+      <li><a id="aServices" href="#">Services</a>
+        <ul id="nestedNav">
+          <li><a href="services.html">Amenities and Special Services</a></li>
+          <li><a href="reception.html">Reception</a></li>
+          <li><a href="temple-missionary.html">Full-time Temple Missionary</a></li>
+        </ul>      
+      </li>
     </ul>
   </nav>
   <main id="mainTemples">
     <h2>Temple List</h2>
     <div class="cards" id="cardToggle"></div>
-    <div class="lists" id="listToggle"></div>
   </main>
   <footer>
     <div id="footer1">
