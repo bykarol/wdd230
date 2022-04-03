@@ -355,10 +355,10 @@ footer {
 }
 
 /* ------------------- MEDIUM VIEW ---------------------------*/
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 37em) {
   .weatherContainer {
     position: absolute;
-    top: 20%;
+    top: 14%;
     left: 40px;
     z-index: -1;
   }
@@ -414,7 +414,7 @@ footer {
 }
 
 /*---------------------- LARGE VIEW --------------------------*/
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 57em) {
   /*LOGO LARGE*/
   header #logo img {
     width: 80%;
@@ -470,6 +470,27 @@ footer {
     border-radius: 0%;
   }
 
+  /*Temples MAIN*/
+
+  #mainTemples .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #mainTemples .cards p {
+    font-size: 1.2rem;
+  }
+
+  /*WEATHER & BOOK NOW*/
+  .weatherContainer {
+    top: 25%;
+  }
+  
+  .bookNow {
+    top: 30%;
+  } 
+  
+
   /*FOOTER*/
   #footer2 ul {
     display: flex;
@@ -486,6 +507,10 @@ footer {
 
   #footer2 ul li:last-child{
     border-right: none;
+  }
+
+  #footer1 img {
+    width: 200px;
   }
 
 }
