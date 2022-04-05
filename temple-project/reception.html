@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Karol Bracho">
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD 
+    that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of 
+    Latter-day Saints around the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Reception Service</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/templestyles.css">
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <img src="images/up-arrow.png" class="icon-up" alt="Go up"/>
+    <header>
+      <a href="index.html"><picture id="logo">
+        <source media="(min-width: 37em)" srcset="images/temple-logo-small.webp">
+        <img src="images/temple-inn-logo.png" alt="Temple Inn & Suites Logo" class="logo">
+      </picture></a>
+      <h1 id="mainTitle">Temple Inn & Suites</h1>
+      <div class="socialMedia">
+        <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo" id="logoFB"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo" id="logoIG"></a>
+      </div>
+      <button class="navBtn" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+  </header>
+  <nav class="navigation">
+    <ul id="primaryNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li class="active"><a id="aServices" href="#">Services</a>
+        <ul id="nestedNav">
+          <li><a href="services.html">Amenities and Special Services</a></li>
+          <li class="active"><a href="reception.html">Reception</a></li>
+          <li><a href="temple-missionary.html">Full-time Temple Missionary</a></li>
+        </ul>      
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Wedding Reception</h2>
+    <section>
+        <h3>Forever You & Me Package</h3>
+        <p>Includes special and romantic dinner for two, serenade, 
+            special decoration in the room, rose petals on the bed.
+        </p>
+        <h4>Enjoy this package on one of the most special days that includes:</h4>
+        <ul>
+            <li>Special service for the bride and groom.</li>
+            <li>Welcome details and a bottle of 0.0% sparkling wine in the room.</li>
+            <li>We take book your appointment at the Temple.</li>
+            <li>Makeup and hairstyle with a natural white orchid for the bride.</li>
+            <li>Mini Wedding cake</li>
+            <li>Serenade during the romantic dinner</li>
+            <li>Breakfast in bed the next morning to celebrate the start of the honeymoon.</li>
+            <li>Extended check-out time until 3:00 p.m. (upon request and subject to availability).</li>
+            <li> Special decoration in the room and rose petals on the bed.</li>
+            <li>Special courtesy gift Temple Inn & Suites.</li>            
+        </ul>
+    </section>
+    <section>
+        <h3>Happily Ever After Package</h3>
+        <p>Reception with personal decoration, includes buffet for 15 people staying at the hotel, live music, 
+            special decoration in the room, rose petals on the bed.
+        </p>
+        <h4>Enjoy this package on one of the most special days that includes:</h4>
+        <ul>
+            <li>Special service for the bride and groom.</li>
+            <li>Hall decorated for the reception.</li>
+            <li>Welcome details and a bottle of 0.0% sparkling wine in the room.</li>
+            <li>We take book your appointment at the Temple.</li>
+            <li>Bride's bouquet and groom's lapel flower.</li>
+            <li>A flower centerpiece.</li>
+            <li>Makeup and hairstyle with a natural white orchid for the bride.</li>
+            <li>Wedding cake</li>
+            <li>Live music during the reception (Mexican trio or guitarist).</li>
+            <li>Breakfast in bed the next morning to celebrate the start of the honeymoon.</li>
+            <li>Extended check-out time until 3:00 p.m. (upon request and subject to availability).</li>
+            <li>Wedding coordination services.</li>
+            <li> Special decoration in the room and rose petals on the bed.</li>
+            <li>Special courtesy gift Temple Inn & Suites.</li>            
+        </ul>
+    </section>
+    <section class="contactUs">
+        <h3>For more details please fill the form</h3>
+    <form method="get" action="contactThanks.html">
+        <fieldset>
+            <legend>Contact Us!</legend>
+          <label class="top">Your name* <input type="text" name="contactName" required></label>
+          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+          <label class="top">Your question/concern <textarea rows="10"></textarea></label>
+        </fieldset>
+          <button type="submit" value="ContactUs" class="submitBtn">Contact Us!</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div id="footer1">
+      <div id="foot1-1">
+      <img src="images/temple-inn-logo.png" alt="Temple Inn and Suites Logo">
+      <p>info@templesuites.com</p>
+      <p>+(881) 5555-5555</p>
+      <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+    </div>
+    <div id="foot1-2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1647984641810!5m2!1ses!2ses" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div id="footer2">
+    <ul>
+      <li>Temple Inn & Suites &copy; <span id="current-year">Year</span></li>
+      <li>Developed by <span id="karolName">Karol Bracho</span></li>
+      <li>WDD 230 Final Project</li>
+      <li>Updated: <span id="date">DATE</span></li>
+      <li><a href="https://bykarol.github.io/wdd230/temple-proyect/references.html" target="_blank"><abbr title="Go to external link">References ↪</abbr></a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/temples.js"></script>
+</body>
+</html>

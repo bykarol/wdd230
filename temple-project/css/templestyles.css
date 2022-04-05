@@ -125,6 +125,10 @@ nav ul.open {
 }
 
 /*Nav hover*/
+.navBtn:hover {
+  font-size: 1.5rem;
+}
+
 .navigation ul li:hover::marker, .navigation ul li a:hover {
   content: "｡★｡";
   color: var(--color-title);
@@ -149,6 +153,14 @@ main {
   margin: 0 auto;
   box-shadow: var(--shadow);
   margin-top: 10px;
+  font-family: var(--font-p);
+}
+
+h2 {
+  font-family: var(--font-title);
+  text-shadow: var(--shadow);
+  padding: 0 1.5rem;
+  font-size: 2rem;
 }
 
 /*BANNER*/
@@ -174,12 +186,6 @@ main section {
   padding: .5rem 1.5rem;
   margin: 3% 0;
   text-align: justify;
-}
-
-main section h2 {
-  font-family: var(--font-title);
-  text-shadow: var(--shadow);
-  padding-bottom: 0%;
 }
 
 main section p {
@@ -286,7 +292,7 @@ fieldset {
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   margin: 1rem 0 2rem 2%;
-  width: 96%;
+  width: 90%;
   max-width: 20rem;
   cursor: pointer;
   box-shadow: var(--shadow);
@@ -307,6 +313,7 @@ form label.top input:required:valid {
   font-weight: 900;
   padding: .75rem 0;
   color: #555;
+  width: 90%;
 }
 
 .reservationForm fieldset fieldset {
@@ -316,6 +323,9 @@ form label.top input:required:valid {
 .reservationForm fieldset fieldset option {
   padding: .75rem 0;
 }
+
+.reservationForm input, .reservationForm select { cursor: pointer;}
+.reservationForm textarea {cursor: text;}
 
 
 /*GO Up ARROW*/
@@ -358,13 +368,18 @@ form label.top input:required:valid {
   border-radius: 5px;
 }
 
-/*RESERVATION MAIN*/
-
-.mainReservation h2 {
-  font-family: var(--font-title);
-  text-shadow: var(--shadow);
-  padding: 0 1.5rem;
-  font-size: 2rem;
+/*SERVICES MAIN*/
+.mainServices ul {padding-left: 0;}
+.mainServices ul li {
+  list-style: none;
+  padding: 1rem;
+}
+.mainServices h3 {
+  background-color: var(--bg-color);
+  padding: 1% 1.5rem;
+  color: var(--bg-generic);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
 }
 
 
@@ -488,6 +503,9 @@ footer {
   }
 
   /*MAIN TITLE*/
+  main {
+    width: 90%;
+  }
   header #mainTitle {
     font-size: 2rem;
   }
@@ -555,8 +573,37 @@ footer {
   
   .bookNow {
     top: 30%;
-  } 
-  
+  }
+
+  /*RESERVATION MAIN*/
+  .reservationForm{
+    width: 100%;
+    margin: 0 auto;
+  }
+  fieldset, .contactUs form label.top input, form label.top select, form label.top textarea, .reservationForm label.top input, .reservationForm label.top select  {
+    width: 60%;
+  }
+
+  /*SERVICES MAIN*/
+  .mainServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+  }
+
+  .mainServices h2 {
+    grid-area: 1/1/1/2;
+  }
+
+  .mainServices #specialServices {
+    grid-area: 2/1/2/2;
+    border-radius: 5px;
+  }
+
+  .mainServices #freeAmenities {
+    grid-area: 2/2/2/3;
+    border-radius: 5px;
+  }  
 
   /*FOOTER*/
   #footer2 ul {
