@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Karol Bracho">
+    <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD 
+    that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of 
+    Latter-day Saints around the world.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/templestyles.css">
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <img src="images/up-arrow.png" class="icon-up" alt="Go up"/>
+    <header>
+      <a href="index.html"><picture id="logo">
+        <source media="(min-width: 37em)" srcset="images/temple-logo-small.webp">
+        <img src="images/temple-inn-logo.png" alt="Temple Inn & Suites Logo" class="logo">
+      </picture></a>
+      <h1 id="mainTitle">Temple Inn & Suites</h1>
+      <div class="socialMedia">
+        <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo" id="logoFB"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo" id="logoIG"></a>
+      </div>
+      <button class="navBtn" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+  </header>
+  <nav class="navigation">
+    <ul id="primaryNav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li class="active"><a href="reservation.html">Reservation</a></li>
+      <li><a id="aServices" href="#">Services</a>
+        <ul id="nestedNav">
+          <li><a href="services.html">Amenities and Special Services</a></li>
+          <li><a href="reception.html">Reception</a></li>
+          <li><a href="temple-missionary.html">Full-time Temple Missionary</a></li>
+        </ul>      
+      </li>
+    </ul>
+  </nav>
+  <main class="mainReservation">
+    <h2>Reservation Form</h2>
+    <form method="get" action="thankyou.html" class="reservationForm">
+        <fieldset>
+            <legend>Guest Information</legend>
+            <label class="top">First Name* <input type="text" name="fname" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" required></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="123456789" required></label>
+            <label class="top">Where do you come from?* <input type="text" name="title" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Book Information</legend>
+            <label for="location" class="top">Location: </label>
+            <select name="location">
+                <option>Select Temple to visit</option>
+                <option value="bogota">Bogotá Colombia Temple</option>
+                <option value="caracas">Caracas Venezuela Temple</option>
+                <option value="guayaquil">Guayaquil Ecuador Temple</option>
+                <option value="madrid">Madrid Spain Temple</option>
+                <option value="dominican">Santo Domingo Dominican Republic Temple</option>
+              </select>
+            <label class="top">Check In <input type="date" name="checkin" min="2022-04-01" value="2022-04-07"></label>
+            <label class="top">Check Out <input type="date" name="chekout" max="2025-04-01"></label>
+            <fieldset>
+                <legend>Room Type</legend>
+                <label class="sbs"><input type="radio" name="roomtype" checked> Single Room</label>
+                <label class="sbs"><input type="radio" name="roomtype"> Double Room</label>
+                <label class="sbs"><input type="radio" name="roomtype"> Suites - Long Term</label>
+            </fieldset>
+            <fieldset>
+                <legend>Specialized Services</legend>
+                <label class="sbs"><input type="checkbox" name="bathroom"> Changing rooms and bathroom facilities</label>
+                <label class="sbs"><input type="checkbox" name="playroom"> Playroom</label>
+                <label class="sbs"><input type="checkbox" name="longterm"> Long-term stay accommodations</label>
+                <label class="sbs"><input type="checkbox" name="sittingarea"> Temple history themed reception and sitting area</label>
+                <label class="sbs"><input type="checkbox" name="weddingreception">  Wedding reception</label>
+                <label class="sbs"><input type="checkbox" name="famsearchcenter"> Family Search Center</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Special accommodations/comments</legend>
+            <label class="top">Tell us about your concerns or special needs<textarea rows="10"></textarea>
+        </fieldset>
+        <input type="submit" value="Make the reserve" class="submitBtn">
+        <input type="hidden" id="dateForm" name="dateForm" value="currentdate">
+    </form>
+  </main>
+  <footer>
+    <div id="footer1">
+      <div id="foot1-1">
+      <img src="images/temple-inn-logo.png" alt="Temple Inn and Suites Logo">
+      <p>info@templesuites.com</p>
+      <p>+(881) 5555-5555</p>
+      <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+    </div>
+    <div id="foot1-2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b8f21f1%3A0x9a0b3cde14da0a60!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1647984641810!5m2!1ses!2ses" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  <div id="footer2">
+    <ul>
+      <li>Temple Inn & Suites &copy; <span id="current-year">Year</span></li>
+      <li>Developed by <span id="karolName">Karol Bracho</span></li>
+      <li>WDD 230 Final Project</li>
+      <li>Updated: <span id="date">DATE</span></li>
+      <li><a href="https://bykarol.github.io/wdd230/temple-proyect/references.html" target="_blank"><abbr title="Go to external link">References ↪</abbr></a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
