@@ -15,6 +15,9 @@
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
+    <div class="bannerAlert openAlert" id="divWeatherAlert">
+      <span id="weatherAlert"> There is not alert for today</span><span id="closeAlert">X</span>
+    </div>
     <img src="images/up-arrow.png" class="icon-up" alt="Go up"/>
     <header>
       <a href="index.html"><picture id="logo">
@@ -24,7 +27,7 @@
       <h1 id="mainTitle">Temple Inn & Suites</h1>
       <div class="socialMedia">
         <a href="https://facebook.com" target="_blank"><img src="images/fb-icon.webp" alt="Facebook logo" id="logoFB"></a>
-        <a href="https://linkedin.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo" id="logoIG"></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/ig-icon.webp" alt="Instagram Logo" id="logoIG"></a>
       </div>
       <button class="navBtn" id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
   </header>
@@ -68,7 +71,7 @@
       </div>
     </section>
     <section class="weatherContainer">
-      <h2>Current Weather</h2>
+      <h3>Current Weather</h3>
       <figure>
         <img src="" alt="" id="weathericon">
         <figcaption class="tempparagraph"></figcaption>
@@ -78,16 +81,16 @@
     </section>
     <section class="spotlights">
       <div class="spot1">
-        <h2 id="spot1-h2">Temple of</h2>
+        <h2 id="spot1-h2">Temple Inn & Suites comes true</h2>
         <hr>
         <hr>
-        <q id="spot1-q">A peaceful place!</q><br>
+        <q id="spot1-q">You like this Temple!</q><br>
         <img id="spot1-img" src="images/CaracasTemple.png" alt="Caracas Temple LDS">
         <p id="spot1-p1">Temple Address</p>
         <p id="spot1-p2">Temple Phone</p>
       </div>
       <div class="spot2">
-        <h2 id="spot2-h2">Temple of</h2>
+        <h2 id="spot2-h2">Come to the Temple</h2>
         <hr>
         <hr>
         <q id="spot2-q">A peaceful place!</q><br>
@@ -132,5 +135,6 @@
   </div>
 </footer>
 <script src="js/temples.js"></script>
+<script src="js/weather-api.js" defer></script>
 </body>
 </html>

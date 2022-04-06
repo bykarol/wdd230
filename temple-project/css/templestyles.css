@@ -165,7 +165,7 @@ h2 {
   font-size: 2rem;
 }
 
-/*BANNER*/
+/*BANNER AND WEATHER ALERT*/
 .mainBanner {
   padding: 0;
   margin-top: 0;
@@ -181,6 +181,25 @@ h2 {
   width: 100%;
 }
 .mainBanner #mainBanner-H2 {display: none;}
+
+/*banner alert weather*/
+.bannerAlert {
+  display: none;
+}
+
+.bannerAlert.openAlert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  padding: 1%;
+  font-family: var(--font-p);
+  font-size: .8rem;
+  color: var(--bg-generic);
+}
+
+.bannerAlert span {padding: 0 5%;}
+.bannerAlert #closeAlert:hover {cursor: pointer; font-size: 1rem;}
 
 /*Home SECTIONS*/
 main section {
@@ -532,6 +551,16 @@ footer {
     display: block;
   }
 
+  /*WEATHER & BOOK NOW*/
+  .weatherContainer {
+    top: 17%;
+    left: 3%;
+  } 
+
+  .weatherContainer p, .weatherContainer h3 {
+   font-size: .8rem;
+  }
+
   /*FOOTER*/
   #footer1 {
     display: flex;
@@ -633,12 +662,15 @@ footer {
 
   /*WEATHER & BOOK NOW*/
   .weatherContainer {
-    top: 25%;
-  }
-  
-  .bookNow {
     top: 30%;
+    left: 5%;
   }
+
+  .weatherContainer p, .weatherContainer h3 {
+    font-size: 1.3rem;
+   }
+  
+  
 
   /*RESERVATION MAIN*/
   .reservationForm{
