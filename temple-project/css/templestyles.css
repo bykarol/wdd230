@@ -407,7 +407,8 @@ form label.top input:required:valid {
 
 aside {
   font-family: var(--font-p);
-  background-image: url(/temple-project/images/fondopoligonojpg.jpg);
+  background-image: url(/temple-project/images/fondopoligono.webp);
+  background-color: black;
   margin-bottom: 0;
   color: var(--bg-generic);
 }
