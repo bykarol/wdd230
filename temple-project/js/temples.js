@@ -1,5 +1,6 @@
 const requestURL = 'https://bykarol.github.io/wdd230/temple-project/data/temple-list.json';
-const i = getRandomIntInclusive(0, 9);
+const i = getRandomIntInclusive(0, 2);
+const j = getRandomIntInclusive(3, 5);
 
 fetch(requestURL)
   .then(function (response) {
@@ -49,6 +50,12 @@ function displayTempleMain(temple) {
   document.querySelector("#spot1-img").setAttribute("alt", `Logo of ${temple[i].name}`)
   document.querySelector("#spot1-p1").innerHTML = `${temple[i].address}`;
   document.querySelector("#spot1-p2").textContent = temple[i].phone;
+  
+  document.querySelector("#spot2-h2").textContent = `${temple[j].name}`;
+  document.querySelector("#spot2-img").setAttribute("src", temple[j].image);
+  document.querySelector("#spot2-img").setAttribute("alt", `Logo of ${temple[j].name}`)
+  document.querySelector("#spot2-p1").innerHTML = `${temple[j].address}`;
+  document.querySelector("#spot2-p2").textContent = temple[j].phone;
 }
 
 // select random temple
