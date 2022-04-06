@@ -407,7 +407,7 @@ form label.top input:required:valid {
 
 aside {
   font-family: var(--font-p);
-  background-image: url(/temple-project/images/fondopoligono.webp);
+  background-image: url(/temple-project/images/fondopoligonojpg.jpg);
   margin-bottom: 0;
   color: var(--bg-generic);
 }
@@ -576,7 +576,7 @@ footer {
   main .spot2 {
     display: block;
   }
-  
+
   .spotlights {
     display: grid;
     grid-template-columns: 1fr 1fr;
