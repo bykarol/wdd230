@@ -13,7 +13,7 @@ fetch(apiURL)
     let temp = document.querySelector('#weatherC');
     let humidity = document.querySelector('#humidity');
     let celsiusTemp = jsObject.main.temp;
-    const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description;
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
     document.querySelector('#weathericon').setAttribute('alt', desc);
@@ -21,13 +21,13 @@ fetch(apiURL)
     temp.textContent = celsiusTemp.toFixed(1);
     humidity.textContent = `${jsObject.main.humidity}%`;
 
-    if (jsObject.alerts.description != Empty) {
-      banner.innerHTML = jsObject.alerts.description;}
-    
+    if (jsObject.alerts.event != Empty) {
+      banner.innerHTML = jsObject.alerts.event;
+    }
   });
 
 /* -------CLOSE BANNER ALERT ---------- */
 const closeButton = document.getElementById("closeAlert");
 closeButton.addEventListener("click", () => {
-    banner.classList.remove("openAlert");
-})
+  banner.classList.remove("openAlert");
+});

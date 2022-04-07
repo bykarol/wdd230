@@ -1,6 +1,6 @@
 const requestURL = 'https://bykarol.github.io/wdd230/temple-project/data/temple-list.json';
 const i = getRandomIntInclusive(0, 2);
-const j = getRandomIntInclusive(3, 5);
+const j = getRandomIntInclusive(3, 4);
 
 fetch(requestURL)
   .then(function (response) {

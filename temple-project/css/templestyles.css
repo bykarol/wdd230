@@ -234,13 +234,29 @@ main .spot2, main .spot3 {display: none;}
  /*WEATHER & BOOKING DIV*/
 .weatherContainer {
   font-family: var(--font-p);
-  color: var(--bg-generic);
+  color: darkblue;
 	border: 1px thin var(--bg-color);
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #333;
   background: radial-gradient(var(--bg-form-input), var(--bg-color));
 	opacity: .9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
+.weatherContainer .tempparagraph {
+  padding: 0%;
+  font-size: 1rem;
+}
+
+#foreCast {
+  background-color: darkblue;
+}
+#foreCast article {box-shadow: var(--shadow); padding: 2%;}
+
+#foreCast img {width: 64px;}
+
 .bookNow {
   display: flex;
   flex-direction: column;
@@ -251,10 +267,10 @@ main .spot2, main .spot3 {display: none;}
   text-align: center;
   width: 100px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bolder;
   font-family: var(--font-p);
-  background-color: gold;
+  background-color: darkblue;
   font-size: .8rem;
   cursor: pointer;
   padding: .8rem;
@@ -553,13 +569,25 @@ footer {
 
   /*WEATHER & BOOK NOW*/
   .weatherContainer {
-    top: 17%;
-    left: 3%;
+    top: 20%;
+    left: 4%;
+    color: var(--bg-generic);
+    padding-bottom: 0%;
+    padding-top: 0%;
   } 
 
-  .weatherContainer p, .weatherContainer h3 {
+  .weatherContainer .tempparagraph, .weatherContainer h3 {
    font-size: .8rem;
+   text-shadow: 0px 2px 3px var(--bg-color);
   }
+
+  #foreCast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+  }
+
+  #foreCast h3 {grid-area: 1/1/1/4;}
 
   /*FOOTER*/
   #footer1 {
@@ -666,7 +694,7 @@ footer {
     left: 5%;
   }
 
-  .weatherContainer p, .weatherContainer h3 {
+  .weatherContainer .tempparagraph, .weatherContainer h3 {
     font-size: 1.3rem;
    }
   
