@@ -10,7 +10,7 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const temple = jsonObject['temples'];
 
-    //display a temple in home page
+    //display temples in home page
     setInterval(function() {
       displayTempleMain(temple);
   }, 2000);
