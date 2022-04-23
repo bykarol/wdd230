@@ -32,7 +32,6 @@ fetch(requestURL)
       let h2 = document.createElement('h2');
       let p1 = document.createElement('p');
       let p2 = document.createElement('p');
-      let p3 = document.createElement('p');
       let webURL = document.createElement('a');
       let image = document.createElement('img');
       image.setAttribute('src', companies[i].logo);
@@ -41,14 +40,13 @@ fetch(requestURL)
       p1.textContent = `${companies[i].address}`;
       p2.textContent = `(881) ${companies[i].phone}`;
       webURL.textContent = companies[i].website;
-      webURL.href = companies[i].website;
-      webURL.target = "_blank";
-      p3.appendChild(webURL);
+      webURL.setAttribute('href', `${companies[i].website}`);
+      webURL.setAttribute('target', '_blank');
       card.appendChild(image);
       card.appendChild(h2);
       card.appendChild(p1);
       card.appendChild(p2);
-      card.appendChild(p3);
+      card.appendChild(webURL);
       document.querySelector('div.cards').appendChild(card);
     }
   };
@@ -66,10 +64,10 @@ function displayList(companies) {
     name.innerHTML = `${companies[i].name}`;
     address.innerHTML = `${companies[i].address}`;
     phone.innerHTML = `(881) ${companies[i].phone}`;
-    webURL.innerHTML = `${companies[i].website}`;
-    webURL.href = companies[i].website;
-    webURL.target = "_blank";
-    weblist.innerHTML = webURL;
+    webURL.textContent = `${companies[i].website}`;
+    webURL.setAttribute('href', `${companies[i].website}`);
+      webURL.setAttribute('target', '_blank');
+    weblist.appendChild(webURL);
     business.appendChild(name);
     business.appendChild(address);
     business.appendChild(phone);
