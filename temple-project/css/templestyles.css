@@ -207,7 +207,6 @@ main section {
   font-family: var(--font-p);
   padding: .5rem 1.5rem;
   margin: 3% 0;
-  text-align: justify;
 }
 
 main section p {
@@ -234,32 +233,63 @@ main .spot2, main .spot3 {display: none;}
  /*WEATHER & BOOKING DIV*/
 .weatherContainer {
   font-family: var(--font-p);
-  color: darkblue;
+  color: var(--bg-generic);
 	border: 1px thin var(--bg-color);
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #333;
-  background: radial-gradient(var(--bg-form-input), var(--bg-color));
-	opacity: .9;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.weatherContainer .tempparagraph {
-  padding: 0%;
-  font-size: 1rem;
-}
-
-#foreCast {
+  display: grid;
+  grid-template-columns: repeat(max-content, 2);
+  margin-bottom: 0;
   background-color: var(--bg-color);
 }
 
-#foreCast article {
-  padding: 2%;
-  margin-bottom: 5%;
-  background-color: var(--bg-generic);
+.weatherContainer .tempparagraph {
+  font-size: 1rem;
+  padding-bottom: .3rem;
+}
+
+.weatherContainer h3 {
+  grid-column: 1/3;
+  text-align: center;
+  vertical-align: bottom;
+  background: radial-gradient(var(--bg-form-input), blue);
+  opacity: .9;;
   border-radius: 5px;
 }
+
+.weatherContainer figure {
+  position: relative;
+  margin: 0%;
+  text-align: right;
+ 
+}
+
+.weatherContainer figure img {
+  max-width: 100%;
+}
+
+
+.weatherContainer div {
+  padding-left: 1.5rem;
+}
+
+#foreCast {
+  margin-top: 0%;
+  background: radial-gradient(var(--bg-form-input), blue);
+	opacity: .9;
+  box-shadow: none;
+}
+
+#foreCast article {
+  text-align: center;
+  background-color: var(--bg-generic);
+  padding: 1%;
+  margin: 2%;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+#foreCast h3 {color:  var(--bg-generic);}
 
 #foreCast img {width: 64px;}
 
@@ -276,7 +306,7 @@ main .spot2, main .spot3 {display: none;}
   color: white;
   font-weight: bolder;
   font-family: var(--font-p);
-  background-color: darkblue;
+  background-color: black;
   font-size: .8rem;
   cursor: pointer;
   padding: .8rem;
@@ -331,7 +361,7 @@ fieldset {
 .contactUs form .submitBtn, .reservationForm .submitBtn {
   border: none;
   font-family: var(--font-p);
-  background-color: var(--bg-color);
+  background-color: black;
   color: var(--bg-generic);
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -444,7 +474,6 @@ form label.top input:required:valid {
 }
 
 #mainTempleMissionary figure figcaption {
-  font-size: .8rem;
   line-height: 1.5rem;
   padding-top: 2%;
 }
@@ -452,9 +481,9 @@ form label.top input:required:valid {
 aside {
   font-family: var(--font-p);
   background-image: url(/temple-project/images/fondopoligono.webp);
-  background-color: black;
-  margin-bottom: 0;
+  background-color: var(--bg-color);
   color: var(--bg-generic);
+  margin-bottom: 1%;
 }
 
 aside form {
@@ -578,25 +607,19 @@ footer {
 
   /*WEATHER & BOOK NOW*/
   .weatherContainer {
-    top: 20%;
+    top: 25%;
     left: 4%;
     color: var(--bg-generic);
     padding-bottom: 0%;
     padding-top: 0%;
+    background: radial-gradient(var(--bg-form-input), var(--bg-color));
+	  opacity: .9;
   } 
 
   .weatherContainer .tempparagraph, .weatherContainer h3 {
-   font-size: .8rem;
+   font-size: 1rem;
    text-shadow: 0px 2px 3px var(--bg-color);
   }
-
-  #foreCast {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2%;
-  }
-
-  #foreCast h3 {grid-area: 1/1/1/4;}
 
   /*FOOTER*/
   #footer1 {
@@ -699,14 +722,25 @@ footer {
 
   /*WEATHER & BOOK NOW*/
   .weatherContainer {
-    top: 30%;
-    left: 5%;
+    top: 35%;
+    left: 7%;
+  }
+
+  .weatherContainer figure figcaption {
+    margin-top: 1rem;
   }
 
   .weatherContainer .tempparagraph, .weatherContainer h3 {
     font-size: 1.3rem;
    }
+
+   #foreCast {
+    display: grid;
+    grid-template-columns: repeat(25%, 3);
+    grid-gap: 2%;
+  }
   
+  #foreCast h3 {grid-area: 1/1/1/4;}
   
 
   /*RESERVATION MAIN*/
