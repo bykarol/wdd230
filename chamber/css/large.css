@@ -89,10 +89,15 @@
   }
   #footer2 ul {
     display: flex;
+    flex-direction: row;
   }
 
   #footer2 ul li {
     flex: 1 1 auto;
+  }
+
+  #footer2 ul li:last-child {
+    padding-top: 0%;
   }
 
   /*Discovery html*/
