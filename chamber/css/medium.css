@@ -18,9 +18,12 @@
     max-width: 32px;
   }
 
-  #nav button {
+  #hamburgerBtn {
+    font-size: 1.7rem;
+  }
+
+  #hamburgerBtn:hover { 
     font-size: 2rem;
-    width: 32px;;
   }
 
   #headerDate {

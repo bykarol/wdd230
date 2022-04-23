@@ -84,18 +84,20 @@ header {
   color: white;
   text-align: center;
   margin: 2%;
+  border-radius: 5px;
 }
 
 /*NAVIGATION*/
-nav button {  
-  background: darkred;
+#hamburgerBtn {  
+  color: darkred;
   border: none;
   font-size: 1.5rem;
-  color: white;
   cursor: pointer;
-  position: absolute;
-  right: 2%;
-  top: 4%;
+  background-color: transparent;
+}
+
+#hamburgerBtn:hover {
+  font-size: 1.7rem;
 }
 
 nav {
@@ -155,7 +157,7 @@ nav ul li:hover {
 
 main {
   width: 95%;
-  margin: 0 auto;
+  margin: 2% auto;
   box-shadow: 0 2px 15px gray;
 }
 
@@ -355,6 +357,7 @@ hr {
 #contactMain {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 96%;
   padding: 0 1%;
   z-index: -1;
@@ -383,7 +386,7 @@ form legend {
 
 form label.top, #thanksMain{
   font-family: 'Quicksand';
-  font-weight: 900;
+  font-weight:900;
   display: block;
   padding-top: 1rem;
   color: darkslategray;
@@ -456,6 +459,12 @@ div.cards {
     border-radius: 5px;
 }
 
+.cards section:hover {
+  background-color: darkred;
+  color: white;
+
+}
+
 .cards section img {
   max-width: 100px;
   box-shadow: 0 2px 15px rgb(49, 33, 33);
@@ -467,6 +476,11 @@ div.cards {
 .cards section h2, .cards section p {
   margin: .8rem;
   padding: 0%;
+}
+
+.cards section:hover h2 {
+  background-color: white;
+  padding: .5rem;
 }
 
 .cards section a {
